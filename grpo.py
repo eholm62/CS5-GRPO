@@ -1,11 +1,17 @@
 """From-scratch GRPO (Group Relative Policy Optimization) trainer.
 
-Mirrors the public interface and the training behavior of TRL's GRPOTrainer.
-It is a transformers.Trainer subclass (like TRL's) so the standard HF training
-machinery -- optimizer, LR schedule, logging, .train_loss / .state.log_history --
-is present and behaves the same as TRL's. The GRPO-specific parts (completion
-sampling, reward scoring, group-normalized advantages, PPO-clipped policy loss
-and KL-to-reference penalty) are implemented from scratch below.
+Targeted at TRL 1.x (verified against TRL 1.18.2).
+
+The public __init__ signature is derived from the installed TRL's
+GRPOTrainer at import time, so `from grpo import GRPO` always presents the
+exact same constructor interface as `from trl import GRPOTrainer`.
+
+It subclasses transformers.Trainer (like TRL does) so the standard HF
+training machinery -- optimizer, LR schedule, logging, .train_loss /
+.state.log_history -- behaves the same as TRL's. The GRPO-specific parts
+(completion sampling, reward scoring, group-normalized advantages,
+PPO-clipped policy loss and KL-to-reference penalty) are implemented from
+scratch below.
 """
 
 import copy
@@ -23,8 +29,17 @@ from transformers.utils import is_peft_available
 logger = logging.getLogger(__name__)
 
 
-class GRPOTrainer(Trainer):
-    """A from-scratch GRPO trainer matching TRL's GRPOTrainer interface."""
+def _first_attr(obj, names, default):
+    for name in names:
+        value = getattr(obj, name, None)
+        if value is not None:
+            return value
+    return default
+
+
+class _GRPOBase(Trainer):
+    """From-scratch GRPO implementation (superset constructor; the public
+    GRPO class is built on top of this with TRL's exact __init__ signature)."""
 
     def __init__(
         self,
@@ -35,6 +50,7 @@ class GRPOTrainer(Trainer):
         eval_dataset=None,
         processing_class=None,
         reward_processing_class=None,
+        reward_processing_classes=None,
         train_collate_fn=None,
         eval_collate_fn=None,
         peft_config=None,
@@ -42,19 +58,26 @@ class GRPOTrainer(Trainer):
         callbacks=None,
         optimizers=None,
         preprocess_logits_for_metrics=None,
+        quantization_config=None,
+        tools=None,
+        rollout_func=None,
+        environment_factory=None,
     ):
         self.reward_funcs = reward_funcs
         self.train_collate_fn = train_collate_fn
         self.eval_collate_fn = eval_collate_fn
         self.peft_config = peft_config
         self.preprocess_logits_for_metrics = preprocess_logits_for_metrics
+        self.tools = tools
+        self.rollout_func = rollout_func
+        self.environment_factory = environment_factory
+        self.quantization_config = quantization_config
         self._pending_metrics = {}
 
-        # The dataset column 'prompt' is not in model.forward's signature; keep it.
         if args is not None:
+            # The 'prompt' column is consumed by this trainer, not model.forward.
             args.remove_unused_columns = False
 
-        # Optionally wrap the model with PEFT (mirrors TRL).
         self._is_peft = peft_config is not None
         if self._is_peft:
             if is_peft_available():
@@ -64,23 +87,31 @@ class GRPOTrainer(Trainer):
             else:
                 raise ImportError("peft is required when a peft_config is provided")
 
-        # Resolve the processing class (tokenizer).
         if processing_class is None:
             processing_class = getattr(model, "processing_class", None) or getattr(model, "tokenizer", None)
         self.processing_class = processing_class
         self.reward_processing_class = reward_processing_class or processing_class
-        if processing_class is not None:
-            pad = processing_class.pad_token_id
-            self._pad_token_id = pad if pad is not None else (processing_class.eos_token_id or 0)
+        self.reward_processing_classes = (
+            list(reward_processing_classes)
+            if isinstance(reward_processing_classes, (list, tuple))
+            else ([reward_processing_classes] if reward_processing_classes is not None else None)
+        )
+        if self.reward_processing_classes:
+            reward_proc_for_completions = self.reward_processing_classes[-1]
+        else:
+            reward_proc_for_completions = self.processing_class
+        self._reward_proc = reward_proc_for_completions if reward_proc_for_completions is not None else self.processing_class
+        if self.processing_class is not None:
+            pad = self.processing_class.pad_token_id
+            self._pad_token_id = pad if pad is not None else (self.processing_class.eos_token_id or 0)
         else:
             self._pad_token_id = 0
 
-        # A frozen reference policy for the KL penalty (only when beta > 0).
+        # Frozen reference policy for the KL penalty (only when beta > 0).
         self.ref_model = None
-        if args is not None and float(getattr(args, "beta", 0.0)) > 0.0 and not self._is_peft:
+        if args is not None and float(getattr(args, "beta", 0.0) or 0.0) > 0.0 and not self._is_peft:
             self.ref_model = self._build_reference_model(model)
 
-        # Delegate the standard setup to transformers.Trainer (same path TRL uses).
         optimizers = tuple(optimizers) if optimizers is not None else (None, None)
         trainer_kwargs = dict(
             model=model,
@@ -100,33 +131,33 @@ class GRPOTrainer(Trainer):
             trainer_kwargs["preprocess_logits_for_metrics"] = preprocess_logits_for_metrics
         super().__init__(**trainer_kwargs)
 
-        # Re-seat the reference model on the correct device, frozen, after Trainer setup.
         if self.ref_model is not None:
             self.ref_model = self.ref_model.to(self.model.device)
             self.ref_model.eval()
             for p in self.ref_model.parameters():
                 p.requires_grad_(False)
 
-    # ------------------------------------------------------------------ #
-    # Data pipeline: batches of raw prompt strings (not model inputs)
-    # ------------------------------------------------------------------ #
+    # ----------------------------- data pipeline ----------------------------- #
     def _prompt_collate_fn(self, examples):
         return {"prompts": [ex["prompt"] for ex in examples]}
 
     def get_train_dataloader(self):
         if self.train_dataset is None:
             return None
-        generator = torch.Generator().manual_seed(self.args.seed)
-        params = dict(
+        seed = getattr(self.args, "data_seed", None) or self.args.seed
+        generator = torch.Generator().manual_seed(seed)
+        # [CPU-ONLY] no device-specific logic here; shuffle is read via getattr
+        # because TRL 1.18.2's GRPOConfig has no 'shuffle' attribute.
+        return DataLoader(
+            self.train_dataset,
             batch_size=int(self.args.per_device_train_batch_size),
-            shuffle=bool(self.args.shuffle),
+            shuffle=bool(getattr(self.args, "shuffle", True)),
             collate_fn=self._prompt_collate_fn,
             num_workers=int(getattr(self.args, "dataloader_num_workers", 0)),
             pin_memory=bool(getattr(self.args, "dataloader_pin_memory", False)),
-            drop_last=bool(self.args.dataloader_drop_last),
+            drop_last=bool(getattr(self.args, "dataloader_drop_last", False)),
             generator=generator,
         )
-        return DataLoader(self.train_dataset, **params)
 
     def get_eval_dataloader(self, eval_dataset=None):
         data = eval_dataset if eval_dataset is not None else self.eval_dataset
@@ -138,10 +169,8 @@ class GRPOTrainer(Trainer):
             collate_fn=self._prompt_collate_fn,
         )
 
-    # ------------------------------------------------------------------ #
-    # Training step + loss (called by Trainer.train loop)
-    # ------------------------------------------------------------------ #
-    def training_step(self, model, inputs):
+    # ----------------------------- training loop ----------------------------- #
+    def training_step(self, model, inputs, num_items_in_batch=None):
         inputs = self._prepare_inputs(inputs)
         loss = self.compute_loss(model, inputs)
         if self.do_grad_scaling:
@@ -163,9 +192,28 @@ class GRPOTrainer(Trainer):
             self._pending_metrics = {}
         return super().log(logs, start_time, **kwargs)
 
-    # ------------------------------------------------------------------ #
-    # Core GRPO math
-    # ------------------------------------------------------------------ #
+    # ------------------------------ GRPO math -------------------------------- #
+    def _max_prompt_length(self):
+        args = self.args
+        mpl = _first_attr(args, ("max_prompt_length", "max_prompt_model_length"), None)
+        if mpl is not None:
+            return int(mpl)
+        total = _first_attr(args, ("max_length",), None)
+        mcl = _first_attr(args, ("max_completion_length",), None)
+        if total is not None and mcl is not None:
+            return max(int(total) - int(mcl), 1)
+        return 128
+
+    def _max_completion_length(self):
+        args = self.args
+        mcl = _first_attr(args, ("max_completion_length",), None)
+        if mcl is not None:
+            return int(mcl)
+        total = _first_attr(args, ("max_length",), None)
+        if total is not None:
+            return max(int(total) - self._max_prompt_length(), 1)
+        return 32
+
     def _build_reference_model(self, model):
         ref = copy.deepcopy(model)
         for p in ref.parameters():
@@ -179,21 +227,21 @@ class GRPOTrainer(Trainer):
         was_training = model.training
         model.eval()
         prompt_ids_list, completion_ids_list = [], []
-        temperature = float(getattr(self.args, "temperature", 1.0))
+        temperature = float(getattr(self.args, "temperature", 1.0) or 1.0)
         do_sample = temperature > 0.0
         for p in flat_prompts:
-            enc = tok(p, truncation=True, max_length=int(self.args.max_prompt_length), return_tensors="pt")
+            enc = tok(p, truncation=True, max_length=self._max_prompt_length(), return_tensors="pt")
             input_ids = enc["input_ids"].to(model.device)
             attention_mask = enc["attention_mask"].to(model.device)
             gen = dict(
-                max_new_tokens=int(self.args.max_completion_length),
+                max_new_tokens=self._max_completion_length(),
                 do_sample=do_sample,
                 pad_token_id=self._pad_token_id,
                 eos_token_id=tok.eos_token_id,
             )
             if do_sample:
                 gen["temperature"] = temperature
-                gen["top_p"] = float(getattr(self.args, "top_p", 1.0))
+                gen["top_p"] = float(getattr(self.args, "top_p", 1.0) or 1.0)
                 top_k = getattr(self.args, "top_k", 0)
                 if top_k and top_k > 0:
                     gen["top_k"] = int(top_k)
@@ -256,25 +304,21 @@ class GRPOTrainer(Trainer):
             lp = F.log_softmax(out.logits.float()[:, :-1, :], dim=-1)
             return -(lp.exp() * lp).sum(-1)
 
-    def _build_reward_batch(self, flat_prompts, completion_ids_list):
-        batch = []
-        for p_text, cids in zip(flat_prompts, completion_ids_list):
-            batch.append(
-                {
-                    "prompt": p_text,
-                    "completion": self.processing_class.decode(cids, skip_special_tokens=False),
-                    "completion_ids": cids.tolist(),
-                }
-            )
-        return batch
-
-    def _compute_rewards(self, reward_batch):
+    def _compute_rewards(self, flat_prompts, completion_ids_list):
+        """Call reward functions with the same keyword-argument convention
+        TRL 1.x uses: reward_func(prompts=..., completions=..., completion_ids=...)."""
+        proc = self._reward_proc
+        completions = [proc.decode(cids, skip_special_tokens=False) for cids in completion_ids_list]
+        completion_ids = [cids.tolist() for cids in completion_ids_list]
         if isinstance(self.reward_funcs, (list, tuple)):
-            all_scores = [rf(reward_batch) for rf in self.reward_funcs]
+            all_scores = [
+                rf(prompts=flat_prompts, completions=completions, completion_ids=completion_ids)
+                for rf in self.reward_funcs
+            ]
             if all_scores and isinstance(all_scores[0][0], (int, float)):
                 return [sum(vals) for vals in zip(*all_scores)]
             return all_scores[0]
-        return self.reward_funcs(reward_batch)
+        return self.reward_funcs(prompts=flat_prompts, completions=completions, completion_ids=completion_ids)
 
     def _group_advantages(self, rewards):
         G = int(self.args.num_generations)
@@ -306,25 +350,25 @@ class GRPOTrainer(Trainer):
         ref_logps = self._ref_logps(model, input_ids, attention_mask, completion_mask)
         kl_per_token = (current_logps - ref_logps) if ref_logps is not None else torch.zeros_like(current_logps)
 
-        rewards = self._compute_rewards(self._build_reward_batch(flat_prompts, completion_ids_list))
+        rewards = self._compute_rewards(flat_prompts, completion_ids_list)
         advantages = self._group_advantages(rewards).to(device)
         reward_mean = torch.tensor(rewards, dtype=torch.float32).mean()
 
         adv_tok = advantages.unsqueeze(1) * shift_mask
-        eps_clip = float(getattr(args, "epsilon", 0.2))
+        eps = float(_first_attr(args, ("epsilon", "epsilon_low"), 0.2) or 0.2)
         coef_1 = torch.exp(current_logps - old_logps)
-        coef_2 = torch.clamp(coef_1, 1.0 - eps_clip, 1.0 + eps_clip)
+        coef_2 = torch.clamp(coef_1, 1.0 - eps, 1.0 + eps)
         ptl1 = coef_1 * adv_tok
         ptl2 = coef_2 * adv_tok
         ptl = -torch.min(ptl1, torch.where(adv_tok < 0, ptl2, ptl1))
         pg_loss = (ptl * shift_mask).sum() / denom
-        clip_ratio = ((torch.abs(coef_1 - 1.0) > eps_clip).float() * shift_mask).sum() / denom
+        clip_ratio = ((torch.abs(coef_1 - 1.0) > eps).float() * shift_mask).sum() / denom
 
         ent = self._per_token_entropy(model, input_ids, attention_mask)
         entropy = (ent * shift_mask).sum() / denom
 
         kl_loss = (kl_per_token * shift_mask).sum() / denom
-        beta = float(getattr(args, "beta", 0.0))
+        beta = float(getattr(args, "beta", 0.0) or 0.0)
         loss = pg_loss + beta * kl_loss
         completion_length = completion_mask.sum(dim=1).float().mean()
 
@@ -339,3 +383,54 @@ class GRPOTrainer(Trainer):
         }
         self._pending_metrics = {k: float(v.item()) for k, v in metrics.items()}
         return {"loss": loss, "metrics": metrics}
+
+
+def _make_grpo_cls(trl_cls):
+    """Build the public GRPO class with an __init__ signature identical to
+    TRL's, delegating to _GRPOBase."""
+    t_params = inspect.signature(trl_cls.__init__).parameters
+    names, var_positional, var_keyword = [], None, None
+    for p in t_params:
+        if p.name == "self":
+            continue
+        if p.kind is inspect.Parameter.VAR_POSITIONAL:
+            var_positional = p.name
+        elif p.kind is inspect.Parameter.VAR_KEYWORD:
+            var_keyword = p.name
+        else:
+            names.append(p.name)
+    if names and names[0] != "self":
+        names = ["self"] + names
+    params = [inspect.Parameter(n, inspect.Parameter.POSITIONAL_OR_KEYWORD) for n in names]
+    if var_positional:
+        params.append(inspect.Parameter(var_positional, inspect.Parameter.VAR_POSITIONAL))
+    if var_keyword:
+        params.append(inspect.Parameter(var_keyword, inspect.Parameter.VAR_KEYWORD))
+    param_names = [n for n in names if n != "self"]
+
+    def dynamic_init(self, *positional, **kw):
+        bound = {}
+        for pname in param_names:
+            if pname in kw:
+                bound[pname] = kw.pop(pname)
+            elif positional:
+                bound[pname] = positional.pop(0)
+            else:
+                break
+        _GRPOBase.__init__(self, **bound, **kw)
+
+    dynamic_init.__signature__ = inspect.Signature(params)
+    dynamic_init.__name__ = "__init__"
+    dynamic_init.__qualname__ = "GRPO.__init__"
+    dynamic_init.__doc__ = "GRPO trainer with the same interface as TRL's GRPOTrainer."
+
+    return type("GRPO", (_GRPOBase,), {"__init__": dynamic_init})
+
+
+try:
+    from trl import GRPOTrainer as _TRL_GRPOTrainer
+
+    GRPO = _make_grpo_cls(_TRL_GRPOTrainer)
+except Exception:  # pragma: no cover - TRL is expected in the test environment
+    GRPO = _GRPOBase
+GRPOTrainer = GRPO

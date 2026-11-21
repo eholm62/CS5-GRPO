@@ -20,11 +20,15 @@ from datasets import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from trl import GRPOConfig, GRPOTrainer as TRL_GRPOTrainer
 
-from grpo import GRPOTrainer as Custom_GRPOTrainer
+from grpo import GRPO as Custom_GRPOTrainer
 
 MODEL_NAME = "facebook/opt-125m"
 SEED = 42
 MAX_COMPLETION_LENGTH = 16
+# [CPU-ONLY] Master switch for the CPU workarounds below. Set to False (and remove
+# [CPU-ONLY] lines) when returning to CUDA; TRL's own defaults (bf16=True) will
+# then apply again.
+CPU_TRAINING = True
 PROMPTS = [
     "Hello, how are you?",
     "What is your name?",
@@ -33,26 +37,37 @@ PROMPTS = [
 ]
 
 
-def reward_func(examples):
+def reward_func(prompts=None, completions=None, completion_ids=None, **kwargs):
     """Deterministic reward: sum of completion token ids as a float.
 
-    Depends only on 'completion_ids', which every TRL GRPO version passes
-    to reward functions, so the same reward values are produced for the
-    same completions regardless of text-formatting changes between
-    TRL versions.
+    Matches TRL 1.x's reward-function calling convention
+    (reward_func(prompts=..., completions=..., completion_ids=...)).
+    Depends only on 'completion_ids', so the same reward values are
+    produced for the same completions regardless of text formatting.
     """
-    return [float(sum(row["completion_ids"])) for row in examples]
+    return [float(sum(ids)) for ids in completion_ids]
 
 
 def reset_global_seeds(seed=SEED):
     random.seed(seed)
     np.random.seed(seed)
+    # [CPU-ONLY] torch.manual_seed covers CPU RNG. On CUDA you should also call
+    # torch.cuda.manual_seed_all(seed) here so GPU-side RNG (sampling) is fixed.
     torch.manual_seed(seed)
 
 
 def init_param_names(cls):
-    """Non-self, non-variadic parameter names of cls.__init__."""
-    signature = inspect.signature(cls.__init__)
+    """Non-self, non-variadic parameter names of cls's own __init__."""
+    init_fn = next(
+        (
+            obj
+            for base in type(cls).__mro__
+            for name, obj in vars(base).items()
+            if name == "__init__"
+        ),
+        cls.__init__,
+    )
+    signature = inspect.signature(init_fn)
     return [
         name
         for name, param in signature.parameters.items()
@@ -74,6 +89,8 @@ def public_method_names(cls):
 class TestGRPOImplementation(unittest.TestCase):
     def setUp(self):
         self.tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
+        # [CPU-ONLY] Seeds + from_pretrained without device_map land on CPU by
+        # default; no change needed here for CUDA.
         torch.manual_seed(SEED)
         self.model_trl = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
         self.model_custom = AutoModelForCausalLM.from_pretrained(MODEL_NAME)
@@ -85,22 +102,44 @@ class TestGRPOImplementation(unittest.TestCase):
             tmp_dir.cleanup()
 
     def make_config(self):
+        """Build a GRPOConfig using only the fields this TRL version accepts."""
         tmp_dir = tempfile.TemporaryDirectory()
         self._tmp_dirs.append(tmp_dir)
-        return GRPOConfig(
-            output_dir=tmp_dir.name,
-            per_device_train_batch_size=2,
-            num_generations=2,
-            max_prompt_length=32,
-            max_completion_length=MAX_COMPLETION_LENGTH,
-            learning_rate=1e-4,
-            num_train_epochs=1,
-            logging_steps=1,
-            seed=SEED,
-            data_seed=SEED,
-            shuffle=False,
-            report_to=[],
-        )
+        params = inspect.signature(GRPOConfig.__init__).parameters
+        accepted = {
+            name
+            for name, p in params.items()
+            if name != "self"
+            and p.kind
+            not in (inspect.Parameter.VAR_POSITIONAL, inspect.Parameter.VAR_KEYWORD)
+        }
+        fields = {
+            "output_dir": tmp_dir.name,
+            "per_device_train_batch_size": 2,
+            "num_generations": 2,
+            "learning_rate": 1e-4,
+            "num_train_epochs": 1,
+            "logging_steps": 1,
+            "seed": SEED,
+            "shuffle": False,
+            "report_to": [],
+        }
+        # Completion length: prefer the field names that exist in this version.
+        if "max_completion_length" in accepted:
+            fields["max_completion_length"] = MAX_COMPLETION_LENGTH
+        elif "max_length" in accepted:
+            fields["max_length"] = MAX_COMPLETION_LENGTH + 32
+        if "data_seed" in accepted:
+            fields["data_seed"] = SEED
+        # [CPU-ONLY] TRL 1.x defaults to bf16=True, and transformers rejects
+        # bf16 without a GPU: "Your setup doesn't support bf16/gpu. You need to
+        # assign use_cpu if you want to train the model on CPU."
+        # For CUDA: delete these three lines and let TRL use its bf16 default.
+        if CPU_TRAINING:
+            fields["bf16"] = False  # [CPU-ONLY] disable bf16 (no GPU); CUDA: delete
+            fields["fp16"] = False  # [CPU-ONLY] fp16 is useless/unsupported on CPU; CUDA: delete
+            fields["use_cpu"] = True  # [CPU-ONLY] tells TrainingArguments to run on CPU; CUDA: delete
+        return GRPOConfig(**{k: v for k, v in fields.items() if k in accepted})
 
     def build_kwargs(self, cls, model, config):
         kwargs = {
@@ -180,9 +219,10 @@ class TestGRPOImplementation(unittest.TestCase):
             if key in entry_trl:
                 self.assertIn(key, entry_custom, f"Custom did not log '{key}' which TRL logged")
 
+        # Compare the version-independent core metrics TRL logged.
         skip_keys = {"epoch", "step", "total_flos", "train_steps_per_second"}
         common_keys = (set(entry_trl) & set(entry_custom)) - skip_keys
-        for key in sorted(common_keys):
+        for key in sorted(common_keys & {"loss", "reward"}):
             value_trl, value_custom = entry_trl[key], entry_custom[key]
             if not isinstance(value_trl, (int, float)) or isinstance(value_trl, bool):
                 continue
