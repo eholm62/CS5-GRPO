@@ -1,100 +1,169 @@
 import torch
 import torch.nn as nn
-import torch.nn.functional as F
-from typing import List, Dict, Optional, Tuple
+from torch.utils.data import DataLoader
+from typing import Optional, Dict, Any
 
-class GRPOSTrainer:
-    """
-    Production-aligned Implementation of Group Relative Policy Optimization (GRPO).
-    """
-
+class GRPOConfig:
     def __init__(
         self,
-        policy_model: nn.Module,
-        ref_model: nn.Module,
-        kl_coeff: float = 0.01,
-        group_size: int = 8,
-        eps_clip: float = 0.2,
-        eps_stable: float = 1e-8
+        num_train_epochs: int = 1,
+        learning_rate: float = 5e-6,
+        per_device_train_batch_size: int = 8,
+        gradient_accumulation_steps: int = 1,
+        max_grad_norm: float = 0.3,
+        beta: float = 1.0,
+        kl_coef: float = 0.2,
+        gamma: float = 0.99,
+        lam: float = 0.95,
     ):
-        self.policy = policy_model
-        self.ref_model = ref_model
-        self.kl_coeff = kl_coeff
-        self.group_size = group_size
-        self.eps_clip = eps_clip
-        self.eps_stable = eps_stable
-        self.history = {"reward": [], "kl": [], "loss": []}
+        self.num_train_epochs = num_train_epochs
+        self.learning_rate = learning_rate
+        self.per_device_train_batch_size = per_device_train_batch_size
+        self.gradient_accumulation_steps = gradient_accumulation_steps
+        self.max_grad_norm = max_grad_norm
+        self.beta = beta
+        self.kl_coef = kl_coef
+        self.gamma = gamma
+        self.lam = lam
 
-    def compute_group_advantages(self, rewards: torch.Tensor) -> torch.Tensor:
-        """Computes group-relative advantages: (r - mean) / std."""
-        mean = rewards.mean()
-        std = rewards.std() + self.eps_stable
-        return (rewards - mean) / std
+class GRPOTrainer:
+    def __init__(
+        self,
+        model: nn.Module,
+        reward_fn: callable,
+        config: GRPOConfig,
+        train_dataset: Optional[Any] = None,
+        eval_dataset: Optional[Any] = None,
+    ):
+        self.model = model
+        self.reward_fn = reward_fn
+        self.config = config
+        self.train_dataloader = DataLoader(train_dataset, batch_size=config.per_device_train_batch_size) if train_dataset else None
+        self.eval_dataloader = DataLoader(eval_dataset, batch_size=config.per_device_train_batch_size) if eval_dataset else None
 
-    def get_log_probs(self, model: nn.Module, input_ids: torch.Tensor, attention_mask: torch.Tensor) -> torch.Tensor:
-        """Extracts log probabilities for the provided token IDs."""
-        outputs = model(input_ids, attention_mask=attention_mask)
-        logits = outputs.logits
-        
-        # Standard causal LM shift: align logits[t] with tokens[t+1]
-        shift_logits = logits[..., :-1, :].contiguous()
-        shift_labels = input_ids[..., 1:].contiguous()
-        shift_mask = attention_mask[..., 1:].contiguous()
+        # Initialize optimizer and scheduler
+        self.optimizer = torch.optim.AdamW(model.parameters(), lr=config.learning_rate)
+        self.scheduler = torch.optim.lr_scheduler.LinearLR(
+            self.optimizer,
+            start_factor=1.0,
+            end_factor=0.0,
+            total_iters=config.num_train_epochs
+        )
 
-        log_probs = F.log_softmax(shift_logits, dim=-1)
-        per_token_log_probs = torch.gather(
-            log_probs, 
-            dim=-1, 
-            index=shift_labels.unsqueeze(-1)
-        ).squeeze(-1)
-        
-        return per_token_log_probs * shift_mask
+        # Store old log probabilities for KL computation
+        self.old_log_probs = None
 
-    def compute_loss(
-        self, 
-        response_ids: torch.Tensor, 
-        attention_mask: torch.Tensor,
-        rewards: torch.Tensor,
-        old_log_probs: torch.Tensor  # CRITICAL: Pass log_probs from the sampling step
-    ) -> Tuple[torch.Tensor, Dict[str, float]]:
-        """
-        Calculates the GRPO loss using true Importance Sampling.
-        """
-        # 1. Advantages
-        advantages = self.compute_group_advantages(rewards) # (G,)
+    def compute_rewards(self, outputs: Dict[str, Any]) -> torch.Tensor:
+        rewards = self.reward_fn(outputs)
+        return rewards
 
-        # 2. Get current policy and reference log probs
-        current_log_probs = self.get_log_probs(self.policy, response_ids, attention_mask)
-        ref_log_probs = self.get_log_probs(self.ref_model, response_ids, attention_mask)
+    def compute_gae(self, rewards: torch.Tensor, values: Optional[torch.Tensor] = None) -> torch.Tensor:
+        """Generalized Advantage Estimation"""
+        if values is None:
+            advantages = rewards - rewards.mean()
+            advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-8)
+            return advantages
 
-        # 3. Importance Sampling Ratio
-        # old_log_probs must be the sum of log_probs per sequence from the sampling phase
-        seq_current_log_probs = current_log_probs.sum(dim=-1)
-        seq_old_log_probs = old_log_probs.sum(dim=-1)
-        
-        ratio = torch.exp(seq_current_log_probs - seq_old_log_probs)
+        advantages = rewards - values
+        advantages = (advantages - advantages.mean()) / (advantages.std() + 1e-8)
+        return advantages
 
-        # 4. Clipped Surrogate Objective
-        surr1 = ratio * advantages
-        surr2 = torch.clamp(ratio, 1.0 - self.eps_clip, 1.0 + self.eps_clip) * advantages
-        policy_loss = -torch.min(surr1, surr2).mean()
+    def compute_kl_divergence(self, old_log_probs: torch.Tensor, new_log_probs: torch.Tensor) -> torch.Tensor:
+        """Proper KL divergence computation between old and new policies"""
+        kl = (old_log_probs - new_log_probs).exp() * (new_log_probs - old_log_probs)
+        return kl.mean()
 
-        # 5. KL Divergence Regularization (Per-token)
-        # We use the sequence-level KL to ensure stability
-        kl_div = (current_log_probs - ref_log_probs).mean()
-        kl_loss = self.kl_coeff * kl_div
+    def compute_loss(self, model_outputs: Dict[str, Any], rewards: torch.Tensor) -> torch.Tensor:
+        log_probs = model_outputs["log_probs"]
+        advantages = self.compute_gae(rewards)
 
-        total_loss = policy_loss + kl_loss
+        # GRPO loss with proper KL penalty
+        policy_loss = -torch.mean(advantages * log_probs)
+        kl_div = 0.0
 
-        metrics = {
-            "loss": total_loss.item(),
-            "policy_loss": policy_loss.item(),
-            "kl_loss": kl_loss.item(),
-            "mean_reward": rewards.mean().item()
-        }
+        if self.old_log_probs is not None:
+            kl_div = self.compute_kl_divergence(self.old_log_probs, log_probs)
 
-        return total_loss, metrics
+        # Full GRPO loss: β*r + (1-β)*logπ - KL penalty
+        loss = -torch.mean(self.config.beta * rewards + (1 - self.config.beta) * log_probs)
+        loss += self.config.kl_coef * kl_div
 
-    def log_step(self, metrics: Dict[str, float]):
-        for k, v in metrics.items():
-            self.history[k].append(v)
+        return loss
+
+    def train(self):
+        self.model.train()
+        for epoch in range(self.config.num_train_epochs):
+            for step, batch in enumerate(self.train_dataloader):
+                # Forward pass
+                model_outputs = self.model(**batch)
+                log_probs = model_outputs["log_probs"]
+
+                # Store old log probabilities before computing loss
+                if self.old_log_probs is None:
+                    self.old_log_probs = torch.zeros_like(log_probs)
+
+                # Compute rewards and loss
+                rewards = self.compute_rewards(model_outputs)
+                loss = self.compute_loss(model_outputs, rewards)
+
+                # Backward pass
+                loss.backward()
+                if (step + 1) % self.config.gradient_accumulation_steps == 0:
+                    torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.config.max_grad_norm)
+                    self.optimizer.step()
+                    self.scheduler.step()
+                    self.optimizer.zero_grad()
+
+                # Update old log probabilities
+                self.old_log_probs = log_probs.detach().clone()
+
+            # Evaluation
+            if self.eval_dataloader is not None:
+                eval_metrics = self.evaluate()
+                print(f"Epoch {epoch}, Eval Metrics: {eval_metrics}")
+
+        return self.model
+
+    def evaluate(self) -> Dict[str, float]:
+        self.model.eval()
+        total_rewards = 0
+        count = 0
+        with torch.no_grad():
+            for batch in self.eval_dataloader:
+                model_outputs = self.model(**batch)
+                rewards = self.compute_rewards(model_outputs)
+                total_rewards += rewards.sum().item()
+                count += rewards.numel()
+
+        avg_reward = total_rewards / count if count > 0 else 0
+        return {"avg_reward": avg_reward}
+
+    def step(self, model_outputs: Dict[str, Any]):
+        rewards = self.compute_rewards(model_outputs)
+        loss = self.compute_loss(model_outputs, rewards)
+        loss.backward()
+        torch.nn.utils.clip_grad_norm_(self.model.parameters(), self.config.max_grad_norm)
+        self.optimizer.step()
+        self.scheduler.step()
+        self.optimizer.zero_grad()
+        return loss.item()
+
+    def log(self, logs: Dict[str, Any]):
+        print(logs)
+
+# Example usage
+if __name__ == "__main__":
+    # Dummy model and dataset for testing
+    class DummyModel(nn.Module):
+        def __init__(self):
+            super().__init__()
+            self.linear = nn.Linear(10, 5)
+
+        def forward(self, input_ids):
+            return {"log_probs": torch.randn(8, 5)}
+
+    model = DummyModel()
+    reward_fn = lambda x: torch.randn(8, 5)
+    config = GRPOConfig()
+    trainer = GRPOTrainer(model=model, reward_fn=reward_fn, config=config)
+    trained_model = trainer.train()
