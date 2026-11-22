@@ -4,11 +4,11 @@
 
 ### Dependencies
  - PyTorch
- - Pandas
  - NumPy
+ - Transformers
 
 Install them within a venv via:
-`pip install torch pandas numpy`
+`pip install torch numpy transformers`
 
 
 # Notes On Current State
