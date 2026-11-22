@@ -200,8 +200,8 @@ class TestGRPOImplementation(unittest.TestCase):
         output_custom = trainer_custom.train()
 
         # 1. The reported training loss must match.
-        loss_trl = float(output_trl.train_loss)
-        loss_custom = float(output_custom.train_loss)
+        loss_trl = float(output_trl.training_loss)
+        loss_custom = float(output_custom.training_loss)
         self.assertLessEqual(
             abs(loss_trl - loss_custom),
             1e-4,
