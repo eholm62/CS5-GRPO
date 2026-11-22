@@ -144,13 +144,24 @@ class GRPOTrainer(Trainer):
     def _prompt_collate(examples):
         return {"prompts": [ex["prompt"] for ex in examples]}
 
+    def _prompts_per_batch(self):
+        """Number of prompts per dataloader batch.
+
+        TRL's per_device_train_batch_size is the number of completions
+        (sequences) per batch. The number of prompts is therefore
+        per_device_train_batch_size // num_generations.
+        """
+        pds = int(self.args.per_device_train_batch_size)
+        G = int(getattr(self.args, "num_generations", 1) or 1)
+        return max(pds // G, 1)
+
     def get_train_dataloader(self):
         if self.train_dataset is None:
             return None
         seed = _first_attr(self.args, ("data_seed", "seed"), 42)
         return DataLoader(
             self.train_dataset,
-            batch_size=self.args.per_device_train_batch_size,
+            batch_size=self._prompts_per_batch(),
             shuffle=True,
             collate_fn=self._prompt_collate,
             num_workers=self.args.dataloader_num_workers,
@@ -165,7 +176,7 @@ class GRPOTrainer(Trainer):
             return None
         return DataLoader(
             data,
-            batch_size=self.args.per_device_train_batch_size,
+            batch_size=self._prompts_per_batch(),
             collate_fn=self._prompt_collate,
         )
 
