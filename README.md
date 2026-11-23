@@ -1,6 +1,12 @@
 # Purdue CS173 Final Project
 ## Group CS5
 
+### Description
+`train_grpo.py` uses a custom implementation of `GRPOTrainer`, found in `grpo.py`, that closely matches the interface for TRL's `GRPOTrainer`, in order to train a small base model, Qwen2.5-0.5B by default, to count the number of a given character in a provided string, while logging reward over time and final weights.
+
+Because the `GRPOTrainer` from `grpo.py` closely matches the interface for the `GRPOTrainer` from trl,
+, you only need to replace the `from grpo import GRPOTrainer, GRPOConfig` in `train_grpo.py` with 
+`from trl import GRPOTrainer, GRPOConfig` in order to switch to TRL's `GRPOTrainer` implementation if desired.
 
 ### Usage
   - Create a venv in the repo via `python3 -m venv .venv`
