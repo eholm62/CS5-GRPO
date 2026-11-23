@@ -1,0 +1,1001 @@
+prompt,target_count,difficulty_level,text_used
+"How many times does the letter 'i' appear in the following text: ""banana intelligence hippopotamus""?",3,1,banana intelligence hippopotamus
+"How many times does the letter 't' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'm' appear in the following text: ""Wfckyutjfbbasio""?",0,3,Wfckyutjfbbasio
+"How many times does the letter 's' appear in the following text: ""success""?",3,0,success
+"How many times does the letter 'r' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",5,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'b' appear in the following text: ""apple Mississippi apple""?",0,1,apple Mississippi apple
+"How many times does the letter 'o' appear in the following text: ""snS>'MiQW5E)u>9$lr$d""?",0,3,snS>'MiQW5E)u>9$lr$d
+"How many times does the letter 's' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 'f' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",1,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'h' appear in the following text: ""@11xjntjf}dt!pkta|i7""?",0,3,@11xjntjf}dt!pkta|i7
+"How many times does the letter 'b' appear in the following text: ""Elephant""?",0,0,Elephant
+"How many times does the letter 'v' appear in the following text: ""The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",2,2,The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'm' appear in the following text: ""|u[D.FX'V>8:F$jE.zO@""?",0,3,|u[D.FX'V>8:F$jE.zO@
+"How many times does the letter 'r' appear in the following text: ""MNJKDW$X7Q4""$W%]-LGY""?",0,3,"MNJKDW$X7Q4""$W%]-LGY"
+"How many times does the letter 'k' appear in the following text: ""success assessment apple""?",0,1,success assessment apple
+"How many times does the letter 'e' appear in the following text: ""ALPHABET""?",1,0,ALPHABET
+"How many times does the letter 'c' appear in the following text: ""OMUMBUSHPESYBVF""?",0,3,OMUMBUSHPESYBVF
+"How many times does the letter 'z' appear in the following text: ""alphabet""?",0,0,alphabet
+"How many times does the letter 'z' appear in the following text: ""MiTACCFjRkImqoH""?",0,3,MiTACCFjRkImqoH
+"How many times does the letter 'c' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'w' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'q' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'y' appear in the following text: ""CHERRY ALPHABET OCCURRENCE""?",1,1,CHERRY ALPHABET OCCURRENCE
+"How many times does the letter 'v' appear in the following text: ""Mississippi Banana apple""?",0,1,Mississippi Banana apple
+"How many times does the letter 'm' appear in the following text: ""OCCURRENCE MISSISSIPPI RHYTHM""?",2,1,OCCURRENCE MISSISSIPPI RHYTHM
+"How many times does the letter 'f' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'j' appear in the following text: ""occurrence""?",0,0,occurrence
+"How many times does the letter 'g' appear in the following text: ""accommodation""?",0,0,accommodation
+"How many times does the letter 'r' appear in the following text: ""intelligence assessment apple""?",0,1,intelligence assessment apple
+"How many times does the letter 'o' appear in the following text: ""queue hippopotamus queue""?",2,1,queue hippopotamus queue
+"How many times does the letter 'r' appear in the following text: ""Artificial intelligence is transforming the way we interact With technology and each other.""?",5,2,Artificial intelligence is transforming the way we interact With technology and each other.
+"How many times does the letter 'o' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",3,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'u' appear in the following text: ""y)Qf""P3sQs3]R>PqO+]M""?",0,3,"y)Qf""P3sQs3]R>PqO+]M"
+"How many times does the letter 'q' appear in the following text: ""Data Science involves extracting insights from structured and unstructured data sources.""?",0,2,Data Science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'e' appear in the following text: ""ALPHABET""?",1,0,ALPHABET
+"How many times does the letter 'c' appear in the following text: ""banana""?",0,0,banana
+"How many times does the letter 'g' appear in the following text: ""In a hole in the ground there lived a hobbit. Not A nasty, dirty, wet hole, but a hobbit-hole.""?",1,2,"In a hole in the ground there lived a hobbit. Not A nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'k' appear in the following text: ""rhythm success elephant""?",0,1,rhythm success elephant
+"How many times does the letter 'g' appear in the following text: ""ROEQH//^13WT<GQM$HBR""?",1,3,ROEQH//^13WT<GQM$HBR
+"How many times does the letter 'v' appear in the following text: ""C:LTI&N[N60!UMT6PCT8""?",0,3,C:LTI&N[N60!UMT6PCT8
+"How many times does the letter 'o' appear in the following text: ""success""?",0,0,success
+"How many times does the letter 'q' appear in the following text: ""Apple cherry banana""?",0,1,Apple cherry banana
+"How many times does the letter 'u' appear in the following text: ""RHYTHM""?",0,0,RHYTHM
+"How many times does the letter 's' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",1,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'c' appear in the following text: ""MASBRQDTFRBAGZS""?",0,3,MASBRQDTFRBAGZS
+"How many times does the letter 'j' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 'u' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",6,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'd' appear in the following text: ""ACCVSONYPWNCHKK""?",0,3,ACCVSONYPWNCHKK
+"How many times does the letter 'c' appear in the following text: ""MQRJOFVBOSWLNNW""?",0,3,MQRJOFVBOSWLNNW
+"How many times does the letter 't' appear in the following text: ""SiBScxHrqPuoQkS""?",0,3,SiBScxHrqPuoQkS
+"How many times does the letter 'x' appear in the following text: ""occurrence""?",0,0,occurrence
+"How many times does the letter 'k' appear in the following text: ""JDBGBQTPFIZMGYZ""?",0,3,JDBGBQTPFIZMGYZ
+"How many times does the letter 'h' appear in the following text: ""The quick brown fox jumps over the lazy Dog. This sentence contains every letter of the alphabet.""?",5,2,The quick brown fox jumps over the lazy Dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'z' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'o' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",4,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'h' appear in the following text: ""Cherry accommodation cherry""?",2,1,Cherry accommodation cherry
+"How many times does the letter 's' appear in the following text: ""HIPPOPOTAMUS QUEUE RHYTHM""?",1,1,HIPPOPOTAMUS QUEUE RHYTHM
+"How many times does the letter 'r' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",4,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'm' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'u' appear in the following text: ""SYZYGY""?",0,0,SYZYGY
+"How many times does the letter 'e' appear in the following text: ""Artificial intelligence is transforming the way we interact with Technology and each other.""?",9,2,Artificial intelligence is transforming the way we interact with Technology and each other.
+"How many times does the letter 'k' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'l' appear in the following text: ""occurrence""?",0,0,occurrence
+"How many times does the letter 'w' appear in the following text: ""RLSYBPVSBDMRGZO""?",0,3,RLSYBPVSBDMRGZO
+"How many times does the letter 'k' appear in the following text: ""QUEUE OCCURRENCE ACCOMMODATION""?",0,1,QUEUE OCCURRENCE ACCOMMODATION
+"How many times does the letter 'i' appear in the following text: ""Data science involves extracting insights from Structured and unstructured data sources.""?",5,2,Data science involves extracting insights from Structured and unstructured data sources.
+"How many times does the letter 'l' appear in the following text: ""HIPPOPOTAMUS HIPPOPOTAMUS OCCURRENCE""?",0,1,HIPPOPOTAMUS HIPPOPOTAMUS OCCURRENCE
+"How many times does the letter 'm' appear in the following text: ""QUEUE INTELLIGENCE APPLE""?",0,1,QUEUE INTELLIGENCE APPLE
+"How many times does the letter 'a' appear in the following text: ""rhythm occurrence Mississippi""?",0,1,rhythm occurrence Mississippi
+"How many times does the letter 'o' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'o' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",6,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'm' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",1,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'u' appear in the following text: ""SUCCESS MISSISSIPPI SYZYGY""?",1,1,SUCCESS MISSISSIPPI SYZYGY
+"How many times does the letter 'd' appear in the following text: ""VEOKbQgyAWnzLug""?",0,3,VEOKbQgyAWnzLug
+"How many times does the letter 'l' appear in the following text: ""In a hole in The ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",4,2,"In a hole in The ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'x' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'e' appear in the following text: ""QUEUE ALPHABET BANANA""?",3,1,QUEUE ALPHABET BANANA
+"How many times does the letter 's' appear in the following text: ""APPLE SYZYGY ACCOMMODATION""?",1,1,APPLE SYZYGY ACCOMMODATION
+"How many times does the letter 'u' appear in the following text: ""Data science involves extracting insights from structured and Unstructured data sources.""?",6,2,Data science involves extracting insights from structured and Unstructured data sources.
+"How many times does the letter 'k' appear in the following text: ""vOLnzOPyhiXOHwm""?",0,3,vOLnzOPyhiXOHwm
+"How many times does the letter 'i' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",3,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'p' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",1,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'u' appear in the following text: ""QUEUE""?",2,0,QUEUE
+"How many times does the letter 't' appear in the following text: ""RHYTHM SYZYGY ASSESSMENT""?",2,1,RHYTHM SYZYGY ASSESSMENT
+"How many times does the letter 't' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter Of the alphabet.""?",9,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter Of the alphabet.
+"How many times does the letter 'p' appear in the following text: ""success occurrence Mississippi""?",2,1,success occurrence Mississippi
+"How many times does the letter 'b' appear in the following text: ""accommodation alphabet Banana""?",2,1,accommodation alphabet Banana
+"How many times does the letter 'l' appear in the following text: ""apple syzygy banana""?",1,1,apple syzygy banana
+"How many times does the letter 'u' appear in the following text: ""To be, or not To be, that is the question: whether 'tis nobler in the mind to suffer.""?",2,2,"To be, or not To be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'r' appear in the following text: ""queue alphabet Apple""?",0,1,queue alphabet Apple
+"How many times does the letter 'g' appear in the following text: ""Apple""?",0,0,Apple
+"How many times does the letter 'x' appear in the following text: ""BANANA HIPPOPOTAMUS MISSISSIPPI""?",0,1,BANANA HIPPOPOTAMUS MISSISSIPPI
+"How many times does the letter 'h' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",1,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'a' appear in the following text: ""The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",4,2,The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'o' appear in the following text: ""intelligence Mississippi banana""?",0,1,intelligence Mississippi banana
+"How many times does the letter 'k' appear in the following text: ""elephant syzygy accommodation""?",0,1,elephant syzygy accommodation
+"How many times does the letter 'b' appear in the following text: ""OVHOTZXODTHEZFP""?",0,3,OVHOTZXODTHEZFP
+"How many times does the letter 'j' appear in the following text: ""T#+)%FFEL6)Y]|>/UWHF""?",0,3,T#+)%FFEL6)Y]|>/UWHF
+"How many times does the letter 'x' appear in the following text: ""S$r:**(|w,a?$?&fyb-y""?",0,3,"S$r:**(|w,a?$?&fyb-y"
+"How many times does the letter 'l' appear in the following text: ""Vf""5'fjg=2bv1d('p8nq""?",0,3,"Vf""5'fjg=2bv1d('p8nq"
+"How many times does the letter 'g' appear in the following text: ""elephant occurrence hippopotamus""?",0,1,elephant occurrence hippopotamus
+"How many times does the letter 'q' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'n' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",5,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'r' appear in the following text: ""rhythm occurrence hippopotamus""?",3,1,rhythm occurrence hippopotamus
+"How many times does the letter 'a' appear in the following text: ""GEWKWMKjZplrSVk""?",0,3,GEWKWMKjZplrSVk
+"How many times does the letter 'x' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'w' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'd' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'u' appear in the following text: ""Elephant occurrence banana""?",1,1,Elephant occurrence banana
+"How many times does the letter 'r' appear in the following text: ""accommodation""?",0,0,accommodation
+"How many times does the letter 'g' appear in the following text: ""occurrence occurrence success""?",0,1,occurrence occurrence success
+"How many times does the letter 'q' appear in the following text: ""cK4b4,'z/qC9L+^4i+=3""?",1,3,"cK4b4,'z/qC9L+^4i+=3"
+"How many times does the letter 'v' appear in the following text: ""The quick brown fox jumps over the lazy dog. This Sentence contains every letter of the alphabet.""?",2,2,The quick brown fox jumps over the lazy dog. This Sentence contains every letter of the alphabet.
+"How many times does the letter 'v' appear in the following text: ""BANANA""?",0,0,BANANA
+"How many times does the letter 'g' appear in the following text: ""MISSISSIPPI ALPHABET SUCCESS""?",0,1,MISSISSIPPI ALPHABET SUCCESS
+"How many times does the letter 'c' appear in the following text: ""queue Mississippi queue""?",0,1,queue Mississippi queue
+"How many times does the letter 't' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",11,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'v' appear in the following text: ""YRJNCCHPOIAMOGY""?",0,3,YRJNCCHPOIAMOGY
+"How many times does the letter 'q' appear in the following text: ""Wntjjpigtgxjsjp""?",0,3,Wntjjpigtgxjsjp
+"How many times does the letter 'p' appear in the following text: ""rhythm hippopotamus syzygy""?",3,1,rhythm hippopotamus syzygy
+"How many times does the letter 'x' appear in the following text: ""Banana banana cherry""?",0,1,Banana banana cherry
+"How many times does the letter 'e' appear in the following text: ""Mississippi syzygy Mississippi""?",0,1,Mississippi syzygy Mississippi
+"How many times does the letter 's' appear in the following text: ""Rhythm""?",0,0,Rhythm
+"How many times does the letter 'q' appear in the following text: ""ALPHABET""?",0,0,ALPHABET
+"How many times does the letter 's' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",4,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'u' appear in the following text: ""success intelligence occurrence""?",2,1,success intelligence occurrence
+"How many times does the letter 'e' appear in the following text: ""intelligence banana queue""?",5,1,intelligence banana queue
+"How many times does the letter 'g' appear in the following text: ""N:MryHs]ORweyVE[?+ww""?",0,3,N:MryHs]ORweyVE[?+ww
+"How many times does the letter 'y' appear in the following text: "";6HAW4C+FE<AR_EFBOE#""?",0,3,;6HAW4C+FE<AR_EFBOE#
+"How many times does the letter 'e' appear in the following text: ""CHERRY""?",1,0,CHERRY
+"How many times does the letter 'h' appear in the following text: ""-o6cnah]1o%l<+iw(cem""?",1,3,-o6cnah]1o%l<+iw(cem
+"How many times does the letter 'q' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'b' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'd' appear in the following text: ""elephant banana banana""?",0,1,elephant banana banana
+"How many times does the letter 'p' appear in the following text: ""NQIGJXTTDVTIRBQ""?",0,3,NQIGJXTTDVTIRBQ
+"How many times does the letter 'w' appear in the following text: ""Idylgheyygcqeys""?",0,3,Idylgheyygcqeys
+"How many times does the letter 'd' appear in the following text: ""Queue""?",0,0,Queue
+"How many times does the letter 'r' appear in the following text: ""occurrence cherry banana""?",4,1,occurrence cherry banana
+"How many times does the letter 'x' appear in the following text: ""RHYTHM""?",0,0,RHYTHM
+"How many times does the letter 'd' appear in the following text: ""Vtrpvnmrupzvpex""?",0,3,Vtrpvnmrupzvpex
+"How many times does the letter 's' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 'm' appear in the following text: ""banana""?",0,0,banana
+"How many times does the letter 'w' appear in the following text: ""0.2UY:5GWL]}KHQ@+<SS""?",1,3,0.2UY:5GWL]}KHQ@+<SS
+"How many times does the letter 'l' appear in the following text: ""SYZYGY APPLE MISSISSIPPI""?",1,1,SYZYGY APPLE MISSISSIPPI
+"How many times does the letter 'u' appear in the following text: ""^H!!W>Wsx45by,p6"";ki""?",0,3,"^H!!W>Wsx45by,p6"";ki"
+"How many times does the letter 'j' appear in the following text: ""Banana""?",0,0,Banana
+"How many times does the letter 'c' appear in the following text: ""Apple""?",0,0,Apple
+"How many times does the letter 'e' appear in the following text: ""Mdmzbkxakovitqo""?",0,3,Mdmzbkxakovitqo
+"How many times does the letter 'w' appear in the following text: ""banana intelligence hippopotamus""?",0,1,banana intelligence hippopotamus
+"How many times does the letter 'w' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",2,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'w' appear in the following text: ""C9Y$=G9!QQR+VLGV2A^Y""?",0,3,C9Y$=G9!QQR+VLGV2A^Y
+"How many times does the letter 'r' appear in the following text: ""INTELLIGENCE HIPPOPOTAMUS QUEUE""?",0,1,INTELLIGENCE HIPPOPOTAMUS QUEUE
+"How many times does the letter 'q' appear in the following text: ""Success""?",0,0,Success
+"How many times does the letter 'e' appear in the following text: ""^n$tqk'lgfglnekdy=l4""?",1,3,^n$tqk'lgfglnekdy=l4
+"How many times does the letter 'd' appear in the following text: ""Assessment""?",0,0,Assessment
+"How many times does the letter 'a' appear in the following text: ""ELEPHANT HIPPOPOTAMUS ACCOMMODATION""?",4,1,ELEPHANT HIPPOPOTAMUS ACCOMMODATION
+"How many times does the letter 'x' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'e' appear in the following text: ""BANANA INTELLIGENCE INTELLIGENCE""?",6,1,BANANA INTELLIGENCE INTELLIGENCE
+"How many times does the letter 'k' appear in the following text: ""FXVTVZYILYXVTBR""?",0,3,FXVTVZYILYXVTBR
+"How many times does the letter 'e' appear in the following text: ""RHYTHM""?",0,0,RHYTHM
+"How many times does the letter 'x' appear in the following text: ""Queue alphabet occurrence""?",0,1,Queue alphabet occurrence
+"How many times does the letter 'i' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",5,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'y' appear in the following text: ""ELEPHANT SYZYGY ASSESSMENT""?",3,1,ELEPHANT SYZYGY ASSESSMENT
+"How many times does the letter 'k' appear in the following text: ""occurrence Elephant cherry""?",0,1,occurrence Elephant cherry
+"How many times does the letter 'm' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",3,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'x' appear in the following text: ""APPLE""?",0,0,APPLE
+"How many times does the letter 'b' appear in the following text: ""JOZQNEDQACTUCCY""?",0,3,JOZQNEDQACTUCCY
+"How many times does the letter 'z' appear in the following text: ""BANANA BANANA APPLE""?",0,1,BANANA BANANA APPLE
+"How many times does the letter 'h' appear in the following text: ""SYZYGY ASSESSMENT CHERRY""?",1,1,SYZYGY ASSESSMENT CHERRY
+"How many times does the letter 's' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",4,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'n' appear in the following text: ""occurrence banana alphabet""?",3,1,occurrence banana alphabet
+"How many times does the letter 'y' appear in the following text: ""occurrence syzygy Mississippi""?",3,1,occurrence syzygy Mississippi
+"How many times does the letter 'r' appear in the following text: ""RHYTHM""?",1,0,RHYTHM
+"How many times does the letter 'k' appear in the following text: ""Hippopotamus""?",0,0,Hippopotamus
+"How many times does the letter 'k' appear in the following text: ""occurrence""?",0,0,occurrence
+"How many times does the letter 'v' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",2,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'j' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",0,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'x' appear in the following text: ""OEPRUZPMSEAVZEA""?",0,3,OEPRUZPMSEAVZEA
+"How many times does the letter 'q' appear in the following text: ""RHYTHM CHERRY RHYTHM""?",0,1,RHYTHM CHERRY RHYTHM
+"How many times does the letter 'h' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",1,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'm' appear in the following text: ""QUEUE RHYTHM BANANA""?",1,1,QUEUE RHYTHM BANANA
+"How many times does the letter 'n' appear in the following text: ""occurrence cherry cherry""?",1,1,occurrence cherry cherry
+"How many times does the letter 'x' appear in the following text: ""BANANA SUCCESS SYZYGY""?",0,1,BANANA SUCCESS SYZYGY
+"How many times does the letter 'r' appear in the following text: ""Elephant banana accommodation""?",0,1,Elephant banana accommodation
+"How many times does the letter 'w' appear in the following text: ""hippopotamus occurrence success""?",0,1,hippopotamus occurrence success
+"How many times does the letter 'a' appear in the following text: ""banana""?",3,0,banana
+"How many times does the letter 'g' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'f' appear in the following text: ""mLZZYCqoJGCerrL""?",0,3,mLZZYCqoJGCerrL
+"How many times does the letter 'f' appear in the following text: ""DLKB:IR/$36PN</]!MIM""?",0,3,DLKB:IR/$36PN</]!MIM
+"How many times does the letter 'l' appear in the following text: ""3gra]!>gk1,i=8%a]{b]""?",0,3,"3gra]!>gk1,i=8%a]{b]"
+"How many times does the letter 'q' appear in the following text: ""Zzzulgbmyubpovh""?",0,3,Zzzulgbmyubpovh
+"How many times does the letter 'q' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 't' appear in the following text: ""OCCURRENCE BANANA APPLE""?",0,1,OCCURRENCE BANANA APPLE
+"How many times does the letter 'd' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",5,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'a' appear in the following text: ""banana apple Banana""?",7,1,banana apple Banana
+"How many times does the letter 'j' appear in the following text: ""banana""?",0,0,banana
+"How many times does the letter 'w' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'c' appear in the following text: ""Intelligence""?",1,0,Intelligence
+"How many times does the letter 'n' appear in the following text: ""-o""0rpB.{B_[d]ih%NyD""?",1,3,"-o""0rpB.{B_[d]ih%NyD"
+"How many times does the letter 'f' appear in the following text: ""occurrence""?",0,0,occurrence
+"How many times does the letter 'y' appear in the following text: ""AFLIRNSVZPUMMNM""?",0,3,AFLIRNSVZPUMMNM
+"How many times does the letter 'r' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a Nasty, dirty, wet hole, but a hobbit-hole.""?",3,2,"In a hole in the ground there lived a hobbit. Not a Nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'e' appear in the following text: ""OCCURRENCE""?",2,0,OCCURRENCE
+"How many times does the letter 'k' appear in the following text: ""Mississippi intelligence apple""?",0,1,Mississippi intelligence apple
+"How many times does the letter 'v' appear in the following text: ""Data Science involves extracting insights from structured and unstructured data sources.""?",2,2,Data Science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'v' appear in the following text: ""elephant""?",0,0,elephant
+"How many times does the letter 'k' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'r' appear in the following text: ""apple intelligence success""?",0,1,apple intelligence success
+"How many times does the letter 's' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",2,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'y' appear in the following text: ""The weather in the mountains can Change quite rapidly within a matter of minutes.""?",1,2,The weather in the mountains can Change quite rapidly within a matter of minutes.
+"How many times does the letter 't' appear in the following text: ""SYZYGY BANANA SUCCESS""?",0,1,SYZYGY BANANA SUCCESS
+"How many times does the letter 'w' appear in the following text: ""Mississippi Apple rhythm""?",0,1,Mississippi Apple rhythm
+"How many times does the letter 'c' appear in the following text: ""To be, Or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, Or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'f' appear in the following text: ""elephant assessment syzygy""?",0,1,elephant assessment syzygy
+"How many times does the letter 'l' appear in the following text: ""INTELLIGENCE OCCURRENCE ASSESSMENT""?",2,1,INTELLIGENCE OCCURRENCE ASSESSMENT
+"How many times does the letter 'k' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'o' appear in the following text: ""Banana""?",0,0,Banana
+"How many times does the letter 'u' appear in the following text: ""ASSESSMENT MISSISSIPPI RHYTHM""?",0,1,ASSESSMENT MISSISSIPPI RHYTHM
+"How many times does the letter 's' appear in the following text: ""Zkxxerhyljecbec""?",0,3,Zkxxerhyljecbec
+"How many times does the letter 'l' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",3,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'r' appear in the following text: ""The weather in the mountains Can change quite rapidly within a matter of minutes.""?",3,2,The weather in the mountains Can change quite rapidly within a matter of minutes.
+"How many times does the letter 'v' appear in the following text: ""cherry Occurrence banana""?",0,1,cherry Occurrence banana
+"How many times does the letter 'r' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",4,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'e' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",9,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'x' appear in the following text: ""Elephant""?",0,0,Elephant
+"How many times does the letter 'v' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'j' appear in the following text: ""([ADEW(UF1-OTS:LGU}Y""?",0,3,([ADEW(UF1-OTS:LGU}Y
+"How many times does the letter 'p' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 's' appear in the following text: ""elephant alphabet Syzygy""?",1,1,elephant alphabet Syzygy
+"How many times does the letter 'i' appear in the following text: ""In a hole In the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",6,2,"In a hole In the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'e' appear in the following text: ""assessment banana alphabet""?",3,1,assessment banana alphabet
+"How many times does the letter 'r' appear in the following text: ""'I$Q.|VQF5;NXLN@.3NF""?",0,3,'I$Q.|VQF5;NXLN@.3NF
+"How many times does the letter 'm' appear in the following text: ""To be, or not to be, That is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, That is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'n' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'f' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 's' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",4,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'r' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",4,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'b' appear in the following text: ""VWQCKCUUDEQRDDM""?",0,3,VWQCKCUUDEQRDDM
+"How many times does the letter 'p' appear in the following text: ""Success occurrence Mississippi""?",2,1,Success occurrence Mississippi
+"How many times does the letter 'm' appear in the following text: ""R+2'MBLQDMNST(L];RES""?",2,3,R+2'MBLQDMNST(L];RES
+"How many times does the letter 'n' appear in the following text: ""The weather in the mountains can Change quite rapidly within a matter of minutes.""?",7,2,The weather in the mountains can Change quite rapidly within a matter of minutes.
+"How many times does the letter 'p' appear in the following text: ""APPLE OCCURRENCE BANANA""?",2,1,APPLE OCCURRENCE BANANA
+"How many times does the letter 'y' appear in the following text: ""L_aafz@}hxh{'oj:z?g,""?",0,3,"L_aafz@}hxh{'oj:z?g,"
+"How many times does the letter 'q' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'i' appear in the following text: ""apple intelligence Rhythm""?",2,1,apple intelligence Rhythm
+"How many times does the letter 'd' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'p' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",2,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'q' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'e' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",7,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'o' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",7,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'b' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'j' appear in the following text: ""MISSISSIPPI HIPPOPOTAMUS BANANA""?",0,1,MISSISSIPPI HIPPOPOTAMUS BANANA
+"How many times does the letter 'n' appear in the following text: ""JzdSdaMiTtuDkCy""?",0,3,JzdSdaMiTtuDkCy
+"How many times does the letter 'o' appear in the following text: ""H3T)<Zo6_h""YG;mTpqf*""?",1,3,"H3T)<Zo6_h""YG;mTpqf*"
+"How many times does the letter 'q' appear in the following text: ""R_SWTo{{zIEQz|C.bKew""?",1,3,R_SWTo{{zIEQz|C.bKew
+"How many times does the letter 'n' appear in the following text: ""accommodation syzygy occurrence""?",2,1,accommodation syzygy occurrence
+"How many times does the letter 't' appear in the following text: """"bmtdgr}dr%>[:%h#hk/""?",1,3,"""bmtdgr}dr%>[:%h#hk/"
+"How many times does the letter 'r' appear in the following text: ""GZCBBNPSFMYKDTT""?",0,3,GZCBBNPSFMYKDTT
+"How many times does the letter 'g' appear in the following text: ""Queue Mississippi alphabet""?",0,1,Queue Mississippi alphabet
+"How many times does the letter 'y' appear in the following text: ""SUCCESS""?",0,0,SUCCESS
+"How many times does the letter 'r' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",7,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'h' appear in the following text: ""CHERRY CHERRY BANANA""?",2,1,CHERRY CHERRY BANANA
+"How many times does the letter 'r' appear in the following text: ""ALPHABET""?",0,0,ALPHABET
+"How many times does the letter 'g' appear in the following text: ""success""?",0,0,success
+"How many times does the letter 'x' appear in the following text: ""CAQDQEFSFOZRNCJ""?",0,3,CAQDQEFSFOZRNCJ
+"How many times does the letter 'h' appear in the following text: ""The weather In the mountains can change quite rapidly within a matter of minutes.""?",5,2,The weather In the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'y' appear in the following text: ""Success accommodation elephant""?",0,1,Success accommodation elephant
+"How many times does the letter 'u' appear in the following text: ""F5z%fuuk8w-y,#r#2}au""?",3,3,"F5z%fuuk8w-y,#r#2}au"
+"How many times does the letter 'h' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",5,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'h' appear in the following text: ""HIPPOPOTAMUS HIPPOPOTAMUS BANANA""?",2,1,HIPPOPOTAMUS HIPPOPOTAMUS BANANA
+"How many times does the letter 'o' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",2,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'e' appear in the following text: ""success alphabet accommodation""?",2,1,success alphabet accommodation
+"How many times does the letter 'b' appear in the following text: ""ACCOMMODATION ASSESSMENT ELEPHANT""?",0,1,ACCOMMODATION ASSESSMENT ELEPHANT
+"How many times does the letter 'o' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",7,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'a' appear in the following text: ""ALPHABET""?",2,0,ALPHABET
+"How many times does the letter 'u' appear in the following text: ""queue hippopotamus banana""?",3,1,queue hippopotamus banana
+"How many times does the letter 'c' appear in the following text: ""alphabet occurrence occurrence""?",6,1,alphabet occurrence occurrence
+"How many times does the letter 'j' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'f' appear in the following text: ""rhythm""?",0,0,rhythm
+"How many times does the letter 'g' appear in the following text: ""Alphabet""?",0,0,Alphabet
+"How many times does the letter 'b' appear in the following text: ""CGRMXGWVNYEAKSR""?",0,3,CGRMXGWVNYEAKSR
+"How many times does the letter 'w' appear in the following text: ""Rhythm""?",0,0,Rhythm
+"How many times does the letter 'g' appear in the following text: ""Elephant syzygy queue""?",1,1,Elephant syzygy queue
+"How many times does the letter 'q' appear in the following text: ""Apple syzygy occurrence""?",0,1,Apple syzygy occurrence
+"How many times does the letter 'n' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'k' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'g' appear in the following text: ""APPLE HIPPOPOTAMUS ELEPHANT""?",0,1,APPLE HIPPOPOTAMUS ELEPHANT
+"How many times does the letter 'v' appear in the following text: ""CLUTRDM4?K-"":&.|MNHJ""?",0,3,"CLUTRDM4?K-"":&.|MNHJ"
+"How many times does the letter 'i' appear in the following text: ""C2T<E/@LEO=$*(*NEXER""?",0,3,C2T<E/@LEO=$*(*NEXER
+"How many times does the letter 'v' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 's' appear in the following text: ""occurrence accommodation Mississippi""?",4,1,occurrence accommodation Mississippi
+"How many times does the letter 'b' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 's' appear in the following text: ""assessment""?",4,0,assessment
+"How many times does the letter 'm' appear in the following text: ""Intelligence Mississippi cherry""?",1,1,Intelligence Mississippi cherry
+"How many times does the letter 'r' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",3,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'h' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",5,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'a' appear in the following text: ""queue cherry Accommodation""?",2,1,queue cherry Accommodation
+"How many times does the letter 'i' appear in the following text: ""q^]_ynUZ-4kG|oAQi-F]""?",1,3,q^]_ynUZ-4kG|oAQi-F]
+"How many times does the letter 'k' appear in the following text: ""banana alphabet accommodation""?",0,1,banana alphabet accommodation
+"How many times does the letter 'h' appear in the following text: ""RHYTHM HIPPOPOTAMUS HIPPOPOTAMUS""?",4,1,RHYTHM HIPPOPOTAMUS HIPPOPOTAMUS
+"How many times does the letter 'e' appear in the following text: ""Mississippi occurrence occurrence""?",4,1,Mississippi occurrence occurrence
+"How many times does the letter 'm' appear in the following text: ""ASSESSMENT""?",1,0,ASSESSMENT
+"How many times does the letter 'e' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",7,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'd' appear in the following text: ""assessment Apple cherry""?",0,1,assessment Apple cherry
+"How many times does the letter 'j' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'd' appear in the following text: ""ubHUMY,;c:I!z&wqf7te""?",0,3,"ubHUMY,;c:I!z&wqf7te"
+"How many times does the letter 'm' appear in the following text: ""queue""?",0,0,queue
+"How many times does the letter 'q' appear in the following text: ""HIPPOPOTAMUS OCCURRENCE INTELLIGENCE""?",0,1,HIPPOPOTAMUS OCCURRENCE INTELLIGENCE
+"How many times does the letter 'm' appear in the following text: ""hippopotamus elephant cherry""?",1,1,hippopotamus elephant cherry
+"How many times does the letter 'w' appear in the following text: ""ASSESSMENT OCCURRENCE CHERRY""?",0,1,ASSESSMENT OCCURRENCE CHERRY
+"How many times does the letter 'i' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",5,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'v' appear in the following text: ""Data science involves extracting insights from structured And unstructured data sources.""?",2,2,Data science involves extracting insights from structured And unstructured data sources.
+"How many times does the letter 'p' appear in the following text: ""HFWVGFTVEVEZNSV""?",0,3,HFWVGFTVEVEZNSV
+"How many times does the letter 'e' appear in the following text: ""assessment syzygy cherry""?",3,1,assessment syzygy cherry
+"How many times does the letter 'h' appear in the following text: ""Assessment""?",0,0,Assessment
+"How many times does the letter 'z' appear in the following text: ""hUhPaMqbtFGcddU""?",0,3,hUhPaMqbtFGcddU
+"How many times does the letter 'f' appear in the following text: ""ELEPHANT""?",0,0,ELEPHANT
+"How many times does the letter 'v' appear in the following text: ""banana Banana rhythm""?",0,1,banana Banana rhythm
+"How many times does the letter 'c' appear in the following text: ""LLQPLLBUOOPVIXW""?",0,3,LLQPLLBUOOPVIXW
+"How many times does the letter 'f' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",2,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'h' appear in the following text: ""ACCOMMODATION RHYTHM QUEUE""?",2,1,ACCOMMODATION RHYTHM QUEUE
+"How many times does the letter 'u' appear in the following text: ""INTELLIGENCE BANANA ALPHABET""?",0,1,INTELLIGENCE BANANA ALPHABET
+"How many times does the letter 'v' appear in the following text: ""Elephant""?",0,0,Elephant
+"How many times does the letter 'z' appear in the following text: ""QALQBTPWXWWOUOT""?",0,3,QALQBTPWXWWOUOT
+"How many times does the letter 'b' appear in the following text: ""SYZYGY RHYTHM INTELLIGENCE""?",0,1,SYZYGY RHYTHM INTELLIGENCE
+"How many times does the letter 'k' appear in the following text: ""SYZYGY""?",0,0,SYZYGY
+"How many times does the letter 'x' appear in the following text: ""Nysnebrgzvqgtps""?",0,3,Nysnebrgzvqgtps
+"How many times does the letter 'u' appear in the following text: ""SVHQWRJVLBMZJCY""?",0,3,SVHQWRJVLBMZJCY
+"How many times does the letter 'd' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 't' appear in the following text: ""banana""?",0,0,banana
+"How many times does the letter 'u' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",2,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'g' appear in the following text: ""syzygy accommodation cherry""?",1,1,syzygy accommodation cherry
+"How many times does the letter 'r' appear in the following text: ""BANANA ELEPHANT ASSESSMENT""?",0,1,BANANA ELEPHANT ASSESSMENT
+"How many times does the letter 'e' appear in the following text: ""The Quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",12,2,The Quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'u' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",3,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'p' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the Mind to suffer.""?",0,2,"To be, or not to be, that is the question: whether 'tis nobler in the Mind to suffer."
+"How many times does the letter 'p' appear in the following text: ""$b3.)xg=Tis=i]zeN16[""?",0,3,$b3.)xg=Tis=i]zeN16[
+"How many times does the letter 'u' appear in the following text: ""S[PAedt6&A1Y-mu8bvJ%""?",1,3,S[PAedt6&A1Y-mu8bvJ%
+"How many times does the letter 'z' appear in the following text: ""mkCCDKBADAawPsy""?",0,3,mkCCDKBADAawPsy
+"How many times does the letter 'k' appear in the following text: ""SYZYGY INTELLIGENCE ELEPHANT""?",0,1,SYZYGY INTELLIGENCE ELEPHANT
+"How many times does the letter 'q' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'd' appear in the following text: ""Mississippi Occurrence banana""?",0,1,Mississippi Occurrence banana
+"How many times does the letter 'e' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",8,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'd' appear in the following text: ""elephant cherry Banana""?",0,1,elephant cherry Banana
+"How many times does the letter 'c' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 't' appear in the following text: ""QUEUE CHERRY OCCURRENCE""?",0,1,QUEUE CHERRY OCCURRENCE
+"How many times does the letter 'o' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'k' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'f' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, But a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, But a hobbit-hole."
+"How many times does the letter 't' appear in the following text: ""HIPPOPOTAMUS""?",1,0,HIPPOPOTAMUS
+"How many times does the letter 'p' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'v' appear in the following text: ""Data science involves extracting insights From structured and unstructured data sources.""?",2,2,Data science involves extracting insights From structured and unstructured data sources.
+"How many times does the letter 'c' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",2,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'o' appear in the following text: ""p77j+DZ5q*43{>=+M0cW""?",0,3,p77j+DZ5q*43{>=+M0cW
+"How many times does the letter 'z' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'h' appear in the following text: ""accommodation banana Success""?",0,1,accommodation banana Success
+"How many times does the letter 'k' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'h' appear in the following text: ""syzygy""?",0,0,syzygy
+"How many times does the letter 's' appear in the following text: ""MISSISSIPPI""?",4,0,MISSISSIPPI
+"How many times does the letter 'd' appear in the following text: ""RRZQKOHIPGWIVIA""?",0,3,RRZQKOHIPGWIVIA
+"How many times does the letter 'o' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",7,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'm' appear in the following text: ""Okfarczsouaoxhp""?",0,3,Okfarczsouaoxhp
+"How many times does the letter 's' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the Alphabet.""?",4,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the Alphabet.
+"How many times does the letter 'l' appear in the following text: ""Data science involves extracting insights from Structured and unstructured data sources.""?",1,2,Data science involves extracting insights from Structured and unstructured data sources.
+"How many times does the letter 'c' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",2,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'o' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",7,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'j' appear in the following text: ""_>L/7M[QLF16<GV}CHA}""?",0,3,_>L/7M[QLF16<GV}CHA}
+"How many times does the letter 'n' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'v' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",1,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'p' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'v' appear in the following text: ""hippopotamus""?",0,0,hippopotamus
+"How many times does the letter 'n' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",7,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'f' appear in the following text: ""ACCOMMODATION BANANA HIPPOPOTAMUS""?",0,1,ACCOMMODATION BANANA HIPPOPOTAMUS
+"How many times does the letter 'n' appear in the following text: ""The weather in The mountains can change quite rapidly within a matter of minutes.""?",7,2,The weather in The mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'v' appear in the following text: ""rhythm""?",0,0,rhythm
+"How many times does the letter 's' appear in the following text: ""Mississippi Rhythm rhythm""?",4,1,Mississippi Rhythm rhythm
+"How many times does the letter 's' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",8,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'p' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'r' appear in the following text: ""elephant accommodation accommodation""?",0,1,elephant accommodation accommodation
+"How many times does the letter 'r' appear in the following text: ""Artificial intelligence is transforming the way We interact with technology and each other.""?",5,2,Artificial intelligence is transforming the way We interact with technology and each other.
+"How many times does the letter 'v' appear in the following text: ""INTELLIGENCE""?",0,0,INTELLIGENCE
+"How many times does the letter 'o' appear in the following text: ""intelligence""?",0,0,intelligence
+"How many times does the letter 'b' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 's' appear in the following text: ""GQFO,^Q[A!F$?NIAWXBC""?",0,3,"GQFO,^Q[A!F$?NIAWXBC"
+"How many times does the letter 'q' appear in the following text: ""Elephant""?",0,0,Elephant
+"How many times does the letter 'k' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'm' appear in the following text: ""Banana""?",0,0,Banana
+"How many times does the letter 'q' appear in the following text: ""accommodation banana banana""?",0,1,accommodation banana banana
+"How many times does the letter 'a' appear in the following text: """"ru_{;t)aY!L""YNhepDO""?",1,3,"""ru_{;t)aY!L""YNhepDO"
+"How many times does the letter 'a' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 'e' appear in the following text: ""rhythm intelligence Cherry""?",4,1,rhythm intelligence Cherry
+"How many times does the letter 'y' appear in the following text: ""OPINnCi.O9CACz(Gf4@q""?",0,3,OPINnCi.O9CACz(Gf4@q
+"How many times does the letter 'z' appear in the following text: ""intelligence""?",0,0,intelligence
+"How many times does the letter 'a' appear in the following text: ""To be, or not to be, that is The question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is The question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'e' appear in the following text: ""hippopotamus queue elephant""?",4,1,hippopotamus queue elephant
+"How many times does the letter 'l' appear in the following text: ""Rco/d&orab[*.+sk{s!@""?",0,3,Rco/d&orab[*.+sk{s!@
+"How many times does the letter 'y' appear in the following text: ""ZEF>H,KAPF9^I5)B![R9""?",0,3,"ZEF>H,KAPF9^I5)B![R9"
+"How many times does the letter 'o' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",7,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'x' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'w' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",1,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'u' appear in the following text: ""To Be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",2,2,"To Be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'x' appear in the following text: ""Bsiybygchwshzqh""?",0,3,Bsiybygchwshzqh
+"How many times does the letter 'q' appear in the following text: ""sXnDPGbiOPWBypt""?",0,3,sXnDPGbiOPWBypt
+"How many times does the letter 'f' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",2,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'w' appear in the following text: ""SUCCESS ELEPHANT CHERRY""?",0,1,SUCCESS ELEPHANT CHERRY
+"How many times does the letter 'x' appear in the following text: ""The weather in the mountains Can change quite rapidly within a matter of minutes.""?",0,2,The weather in the mountains Can change quite rapidly within a matter of minutes.
+"How many times does the letter 'u' appear in the following text: ""QUEUE ELEPHANT ELEPHANT""?",2,1,QUEUE ELEPHANT ELEPHANT
+"How many times does the letter 'z' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'g' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'e' appear in the following text: ""rhythm queue apple""?",3,1,rhythm queue apple
+"How many times does the letter 'a' appear in the following text: ""OMDCRQDTOYNJERH""?",0,3,OMDCRQDTOYNJERH
+"How many times does the letter 'r' appear in the following text: ""OCCURRENCE""?",2,0,OCCURRENCE
+"How many times does the letter 'h' appear in the following text: ""TZZZFIOAYWDEXWQ""?",0,3,TZZZFIOAYWDEXWQ
+"How many times does the letter 'o' appear in the following text: ""The weather in the mountains can change quite Rapidly within a matter of minutes.""?",2,2,The weather in the mountains can change quite Rapidly within a matter of minutes.
+"How many times does the letter 'q' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'x' appear in the following text: ""assessment Mississippi rhythm""?",0,1,assessment Mississippi rhythm
+"How many times does the letter 'q' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'n' appear in the following text: ""INTELLIGENCE SUCCESS ALPHABET""?",2,1,INTELLIGENCE SUCCESS ALPHABET
+"How many times does the letter 'e' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",8,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 't' appear in the following text: ""Mississippi success Assessment""?",1,1,Mississippi success Assessment
+"How many times does the letter 'g' appear in the following text: ""eQ/*24zd(z%Wc|h4=pa=""?",0,3,eQ/*24zd(z%Wc|h4=pa=
+"How many times does the letter 'd' appear in the following text: ""Mississippi Mississippi banana""?",0,1,Mississippi Mississippi banana
+"How many times does the letter 'u' appear in the following text: ""RHYTHM MISSISSIPPI BANANA""?",0,1,RHYTHM MISSISSIPPI BANANA
+"How many times does the letter 't' appear in the following text: ""banana""?",0,0,banana
+"How many times does the letter 'p' appear in the following text: ""apple intelligence Assessment""?",2,1,apple intelligence Assessment
+"How many times does the letter 's' appear in the following text: ""ASSESSMENT""?",4,0,ASSESSMENT
+"How many times does the letter 'p' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'e' appear in the following text: ""banana syzygy Occurrence""?",2,1,banana syzygy Occurrence
+"How many times does the letter 'v' appear in the following text: ""ELEPHANT RHYTHM MISSISSIPPI""?",0,1,ELEPHANT RHYTHM MISSISSIPPI
+"How many times does the letter 'e' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",8,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'y' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'c' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",3,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'u' appear in the following text: ""To be, or not to be, That is the question: whether 'tis nobler in the mind to suffer.""?",2,2,"To be, or not to be, That is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'k' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",0,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'g' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'k' appear in the following text: ""Intelligence queue alphabet""?",0,1,Intelligence queue alphabet
+"How many times does the letter 'q' appear in the following text: ""assessment hippopotamus occurrence""?",0,1,assessment hippopotamus occurrence
+"How many times does the letter 'x' appear in the following text: ""APPLE""?",0,0,APPLE
+"How many times does the letter 'h' appear in the following text: ""ACCOMMODATION""?",0,0,ACCOMMODATION
+"How many times does the letter 'r' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",5,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'l' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",4,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'x' appear in the following text: ""N3nnk=k.82?tw|>-)e3^""?",0,3,N3nnk=k.82?tw|>-)e3^
+"How many times does the letter 's' appear in the following text: ""To be, or not to be, that Is the question: whether 'tis nobler in the mind to suffer.""?",4,2,"To be, or not to be, that Is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'd' appear in the following text: ""zoGpbOfYiWkwNhl""?",0,3,zoGpbOfYiWkwNhl
+"How many times does the letter 'v' appear in the following text: ""Intelligence""?",0,0,Intelligence
+"How many times does the letter 'q' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'w' appear in the following text: ""D}/F-^8WCFC;COBTVUZA""?",1,3,D}/F-^8WCFC;COBTVUZA
+"How many times does the letter 'n' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'm' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",3,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'f' appear in the following text: ""MISSISSIPPI INTELLIGENCE RHYTHM""?",0,1,MISSISSIPPI INTELLIGENCE RHYTHM
+"How many times does the letter 'i' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, Dirty, wet hole, but a hobbit-hole.""?",6,2,"In a hole in the ground there lived a hobbit. Not a nasty, Dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'e' appear in the following text: ""Elephant""?",2,0,Elephant
+"How many times does the letter 'n' appear in the following text: ""assessment Banana elephant""?",4,1,assessment Banana elephant
+"How many times does the letter 'j' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'g' appear in the following text: ""banana occurrence Elephant""?",0,1,banana occurrence Elephant
+"How many times does the letter 'v' appear in the following text: ""accommodation success banana""?",0,1,accommodation success banana
+"How many times does the letter 's' appear in the following text: ""#GOKWFK2L}68HCZC5NW1""?",0,3,#GOKWFK2L}68HCZC5NW1
+"How many times does the letter 'b' appear in the following text: ""accommodation banana hippopotamus""?",1,1,accommodation banana hippopotamus
+"How many times does the letter 'd' appear in the following text: ""alphabet hippopotamus occurrence""?",0,1,alphabet hippopotamus occurrence
+"How many times does the letter 'z' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'g' appear in the following text: ""hippopotamus elephant syzygy""?",1,1,hippopotamus elephant syzygy
+"How many times does the letter 'b' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'w' appear in the following text: ""banana success Hippopotamus""?",0,1,banana success Hippopotamus
+"How many times does the letter 'h' appear in the following text: ""BANANA APPLE BANANA""?",0,1,BANANA APPLE BANANA
+"How many times does the letter 'g' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",1,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'y' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",2,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'd' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",1,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'a' appear in the following text: ""INTELLIGENCE OCCURRENCE INTELLIGENCE""?",0,1,INTELLIGENCE OCCURRENCE INTELLIGENCE
+"How many times does the letter 'm' appear in the following text: ""hippopotamus assessment banana""?",2,1,hippopotamus assessment banana
+"How many times does the letter 'i' appear in the following text: ""U0$S_GC>S:H-=/MSI|ST""?",1,3,U0$S_GC>S:H-=/MSI|ST
+"How many times does the letter 'g' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",3,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'y' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'd' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",3,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 's' appear in the following text: ""ELEPHANT""?",0,0,ELEPHANT
+"How many times does the letter 'i' appear in the following text: ""HIPPOPOTAMUS""?",1,0,HIPPOPOTAMUS
+"How many times does the letter 'u' appear in the following text: ""SYZYGY""?",0,0,SYZYGY
+"How many times does the letter 'u' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'h' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",7,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'm' appear in the following text: ""DJBNORXREHUUPQF""?",0,3,DJBNORXREHUUPQF
+"How many times does the letter 'l' appear in the following text: ""SUJHOC,AWIH)IHX6HPVD""?",0,3,"SUJHOC,AWIH)IHX6HPVD"
+"How many times does the letter 'h' appear in the following text: ""EHJB@*+PIU<^A6<JHHGC""?",3,3,EHJB@*+PIU<^A6<JHHGC
+"How many times does the letter 'h' appear in the following text: ""Apple Mississippi accommodation""?",0,1,Apple Mississippi accommodation
+"How many times does the letter 'u' appear in the following text: ""BANANA""?",0,0,BANANA
+"How many times does the letter 't' appear in the following text: ""Occurrence accommodation syzygy""?",1,1,Occurrence accommodation syzygy
+"How many times does the letter 'o' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",2,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'v' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'n' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",5,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'm' appear in the following text: ""HIPPOPOTAMUS MISSISSIPPI ACCOMMODATION""?",4,1,HIPPOPOTAMUS MISSISSIPPI ACCOMMODATION
+"How many times does the letter 'z' appear in the following text: "":A-NOW';!%J,(STNC$ET""?",0,3,":A-NOW';!%J,(STNC$ET"
+"How many times does the letter 'i' appear in the following text: ""qxtyblrWJqwpRqd""?",0,3,qxtyblrWJqwpRqd
+"How many times does the letter 'y' appear in the following text: ""RPLBXCMLTKRNFKL""?",0,3,RPLBXCMLTKRNFKL
+"How many times does the letter 'o' appear in the following text: ""Mississippi Apple occurrence""?",1,1,Mississippi Apple occurrence
+"How many times does the letter 'b' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'f' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'c' appear in the following text: ""F2oqn13k7au#e!'^,94c""?",1,3,"F2oqn13k7au#e!'^,94c"
+"How many times does the letter 'k' appear in the following text: ""cherry""?",0,0,cherry
+"How many times does the letter 'l' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in The mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in The mind to suffer."
+"How many times does the letter 'e' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",9,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'j' appear in the following text: ""+DWW#S:JVC')0""B#H|SL""?",1,3,"+DWW#S:JVC')0""B#H|SL"
+"How many times does the letter 'm' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 'q' appear in the following text: ""5>(PH$P&_9FDS+P:CRFL""?",0,3,5>(PH$P&_9FDS+P:CRFL
+"How many times does the letter 'i' appear in the following text: "":(EPSEO*W*GJ2/[L2PEA""?",0,3,:(EPSEO*W*GJ2/[L2PEA
+"How many times does the letter 'f' appear in the following text: ""Success""?",0,0,Success
+"How many times does the letter 'a' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'f' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",1,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'd' appear in the following text: ""BANANA INTELLIGENCE APPLE""?",0,1,BANANA INTELLIGENCE APPLE
+"How many times does the letter 'j' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 's' appear in the following text: ""Mississippi Mississippi apple""?",8,1,Mississippi Mississippi apple
+"How many times does the letter 'm' appear in the following text: ""OSAZES^XI-&5DCAL3SET""?",0,3,OSAZES^XI-&5DCAL3SET
+"How many times does the letter 'c' appear in the following text: ""SYZYGY ACCOMMODATION ASSESSMENT""?",2,1,SYZYGY ACCOMMODATION ASSESSMENT
+"How many times does the letter 'c' appear in the following text: ""Wugwwbrokxezzqy""?",0,3,Wugwwbrokxezzqy
+"How many times does the letter 'q' appear in the following text: ""Kzgrrtbvlenmovt""?",0,3,Kzgrrtbvlenmovt
+"How many times does the letter 'l' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'j' appear in the following text: ""HIPPOPOTAMUS ASSESSMENT QUEUE""?",0,1,HIPPOPOTAMUS ASSESSMENT QUEUE
+"How many times does the letter 'e' appear in the following text: ""CHERRY""?",1,0,CHERRY
+"How many times does the letter 'o' appear in the following text: ""Artificial intelligence Is transforming the way we interact with technology and each other.""?",4,2,Artificial intelligence Is transforming the way we interact with technology and each other.
+"How many times does the letter 'h' appear in the following text: ""Cherry""?",1,0,Cherry
+"How many times does the letter 'z' appear in the following text: ""RHYTHM""?",0,0,RHYTHM
+"How many times does the letter 'q' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 'y' appear in the following text: ""Occurrence occurrence syzygy""?",3,1,Occurrence occurrence syzygy
+"How many times does the letter 'c' appear in the following text: ""intelligence accommodation assessment""?",3,1,intelligence accommodation assessment
+"How many times does the letter 'r' appear in the following text: ""ELEPHANT RHYTHM INTELLIGENCE""?",1,1,ELEPHANT RHYTHM INTELLIGENCE
+"How many times does the letter 'l' appear in the following text: ""MISSISSIPPI APPLE ACCOMMODATION""?",1,1,MISSISSIPPI APPLE ACCOMMODATION
+"How many times does the letter 'l' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",1,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'c' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",2,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'i' appear in the following text: ""973b[7pq#npjtdrf>}b+""?",0,3,973b[7pq#npjtdrf>}b+
+"How many times does the letter 'k' appear in the following text: ""Q*^X<CU{FZVGD8Y]J1UY""?",0,3,Q*^X<CU{FZVGD8Y]J1UY
+"How many times does the letter 'i' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",9,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'a' appear in the following text: ""QUEUE""?",0,0,QUEUE
+"How many times does the letter 'i' appear in the following text: ""Banana apple banana""?",0,1,Banana apple banana
+"How many times does the letter 'o' appear in the following text: ""The quick brown Fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",6,2,The quick brown Fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'l' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'z' appear in the following text: ""eBH[YJ<+a]@H:+,2#UL]""?",0,3,"eBH[YJ<+a]@H:+,2#UL]"
+"How many times does the letter 'z' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'f' appear in the following text: ""assessment""?",0,0,assessment
+"How many times does the letter 'e' appear in the following text: ""Artificial intelligence is transforming the Way we interact with technology and each other.""?",9,2,Artificial intelligence is transforming the Way we interact with technology and each other.
+"How many times does the letter 's' appear in the following text: ""RHYTHM OCCURRENCE OCCURRENCE""?",0,1,RHYTHM OCCURRENCE OCCURRENCE
+"How many times does the letter 'm' appear in the following text: ""ELEPHANT APPLE OCCURRENCE""?",0,1,ELEPHANT APPLE OCCURRENCE
+"How many times does the letter 'f' appear in the following text: ""J?1$f17-a!%7((r,gxkx""?",1,3,"J?1$f17-a!%7((r,gxkx"
+"How many times does the letter 'v' appear in the following text: ""Data science involves extracting insights from Structured and unstructured data sources.""?",2,2,Data science involves extracting insights from Structured and unstructured data sources.
+"How many times does the letter 't' appear in the following text: ""alphabet Mississippi assessment""?",2,1,alphabet Mississippi assessment
+"How many times does the letter 'i' appear in the following text: ""OCCURRENCE RHYTHM HIPPOPOTAMUS""?",1,1,OCCURRENCE RHYTHM HIPPOPOTAMUS
+"How many times does the letter 'k' appear in the following text: ""accommodation alphabet success""?",0,1,accommodation alphabet success
+"How many times does the letter 'u' appear in the following text: ""Q*WJ]JIZVGS1_:PCA4B8""?",0,3,Q*WJ]JIZVGS1_:PCA4B8
+"How many times does the letter 'm' appear in the following text: ""Artificial Intelligence is transforming the way we interact with technology and each other.""?",1,2,Artificial Intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'o' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",4,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'o' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",6,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'p' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'j' appear in the following text: ""<I{XI}RI(S<Y]KPOOE=M""?",0,3,<I{XI}RI(S<Y]KPOOE=M
+"How many times does the letter 'y' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",0,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'r' appear in the following text: ""occurrence assessment accommodation""?",2,1,occurrence assessment accommodation
+"How many times does the letter 'u' appear in the following text: ""cherry""?",0,0,cherry
+"How many times does the letter 'f' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'j' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'g' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",2,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'm' appear in the following text: ""HIPPOPOTAMUS CHERRY INTELLIGENCE""?",1,1,HIPPOPOTAMUS CHERRY INTELLIGENCE
+"How many times does the letter 'w' appear in the following text: ""[Mhl{gS4H2Z_t$Rg%{[(""?",0,3,[Mhl{gS4H2Z_t$Rg%{[(
+"How many times does the letter 'o' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",2,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'k' appear in the following text: ""t8;MzMn57M]Bu3uk:X3}""?",1,3,t8;MzMn57M]Bu3uk:X3}
+"How many times does the letter 'b' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'q' appear in the following text: ""banana rhythm intelligence""?",0,1,banana rhythm intelligence
+"How many times does the letter 'q' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 't' appear in the following text: ""The weather in the mountains can Change quite rapidly within a matter of minutes.""?",9,2,The weather in the mountains can Change quite rapidly within a matter of minutes.
+"How many times does the letter 't' appear in the following text: ""|wit^@e){r;4e1b:8lvl""?",1,3,|wit^@e){r;4e1b:8lvl
+"How many times does the letter 'l' appear in the following text: ""To be, or not to be, that Is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that Is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'j' appear in the following text: ""Hbn|r;a{h3w;7@ag&+yt""?",0,3,Hbn|r;a{h3w;7@ag&+yt
+"How many times does the letter 'h' appear in the following text: ""ASSESSMENT CHERRY ASSESSMENT""?",1,1,ASSESSMENT CHERRY ASSESSMENT
+"How many times does the letter 'o' appear in the following text: ""elephant""?",0,0,elephant
+"How many times does the letter 'w' appear in the following text: ""OCCURRENCE RHYTHM ELEPHANT""?",0,1,OCCURRENCE RHYTHM ELEPHANT
+"How many times does the letter 'k' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'q' appear in the following text: ""B=m""$xavuzhdt-|8t?{3""?",0,3,"B=m""$xavuzhdt-|8t?{3"
+"How many times does the letter 'i' appear in the following text: ""NEBKKSEDTDXBGCQ""?",0,3,NEBKKSEDTDXBGCQ
+"How many times does the letter 'n' appear in the following text: ""ALPHABET""?",0,0,ALPHABET
+"How many times does the letter 'e' appear in the following text: ""{XQ[DWV[!@L0S}B,PNBV""?",0,3,"{XQ[DWV[!@L0S}B,PNBV"
+"How many times does the letter 'k' appear in the following text: ""QUEUE HIPPOPOTAMUS ACCOMMODATION""?",0,1,QUEUE HIPPOPOTAMUS ACCOMMODATION
+"How many times does the letter 'r' appear in the following text: ""intelligence queue Cherry""?",2,1,intelligence queue Cherry
+"How many times does the letter 'l' appear in the following text: ""APPLE ACCOMMODATION RHYTHM""?",1,1,APPLE ACCOMMODATION RHYTHM
+"How many times does the letter 'a' appear in the following text: ""SYZYGY OCCURRENCE MISSISSIPPI""?",0,1,SYZYGY OCCURRENCE MISSISSIPPI
+"How many times does the letter 'e' appear in the following text: ""success Rhythm queue""?",3,1,success Rhythm queue
+"How many times does the letter 'c' appear in the following text: ""banana assessment cherry""?",1,1,banana assessment cherry
+"How many times does the letter 'm' appear in the following text: ""queue""?",0,0,queue
+"How many times does the letter 'v' appear in the following text: ""rhythm occurrence cherry""?",0,1,rhythm occurrence cherry
+"How many times does the letter 'k' appear in the following text: ""ALPHABET ALPHABET ELEPHANT""?",0,1,ALPHABET ALPHABET ELEPHANT
+"How many times does the letter 'r' appear in the following text: ""success banana assessment""?",0,1,success banana assessment
+"How many times does the letter 's' appear in the following text: ""SUCCESS""?",3,0,SUCCESS
+"How many times does the letter 'g' appear in the following text: ""HIPPOPOTAMUS""?",0,0,HIPPOPOTAMUS
+"How many times does the letter 'q' appear in the following text: ""SUCCESS""?",0,0,SUCCESS
+"How many times does the letter 'g' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'r' appear in the following text: ""Hippopotamus""?",0,0,Hippopotamus
+"How many times does the letter 'd' appear in the following text: ""ALPHABET RHYTHM ASSESSMENT""?",0,1,ALPHABET RHYTHM ASSESSMENT
+"How many times does the letter 'z' appear in the following text: ""Artificial Intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial Intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'g' appear in the following text: ""BANANA""?",0,0,BANANA
+"How many times does the letter 'j' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",0,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'g' appear in the following text: ""Queue""?",0,0,Queue
+"How many times does the letter 'x' appear in the following text: ""elephant banana intelligence""?",0,1,elephant banana intelligence
+"How many times does the letter 's' appear in the following text: ""T^o;|hnqkrr&a=m3ws?*""?",1,3,T^o;|hnqkrr&a=m3ws?*
+"How many times does the letter 'u' appear in the following text: ""OCCURRENCE SYZYGY ASSESSMENT""?",1,1,OCCURRENCE SYZYGY ASSESSMENT
+"How many times does the letter 'h' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'p' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'x' appear in the following text: ""ASSESSMENT ALPHABET ELEPHANT""?",0,1,ASSESSMENT ALPHABET ELEPHANT
+"How many times does the letter 'u' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",2,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'w' appear in the following text: ""cherry""?",0,0,cherry
+"How many times does the letter 'l' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",1,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'k' appear in the following text: ""Intelligence""?",0,0,Intelligence
+"How many times does the letter 'c' appear in the following text: ""occurrence Queue Mississippi""?",3,1,occurrence Queue Mississippi
+"How many times does the letter 'q' appear in the following text: ""Mississippi intelligence Accommodation""?",0,1,Mississippi intelligence Accommodation
+"How many times does the letter 'm' appear in the following text: ""ELEPHANT""?",0,0,ELEPHANT
+"How many times does the letter 'h' appear in the following text: ""CHERRY""?",1,0,CHERRY
+"How many times does the letter 'w' appear in the following text: ""intelligence""?",0,0,intelligence
+"How many times does the letter 'l' appear in the following text: ""Banana intelligence elephant""?",3,1,Banana intelligence elephant
+"How many times does the letter 'j' appear in the following text: ""G&m!tJ*QGpLu.Id$Wg!F""?",1,3,G&m!tJ*QGpLu.Id$Wg!F
+"How many times does the letter 'f' appear in the following text: ""ASSESSMENT ACCOMMODATION QUEUE""?",0,1,ASSESSMENT ACCOMMODATION QUEUE
+"How many times does the letter 'p' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'i' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 'o' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",3,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'x' appear in the following text: ""CLVOFUHJDYEMUBL""?",0,3,CLVOFUHJDYEMUBL
+"How many times does the letter 'j' appear in the following text: ""fGpMvhoGIZtHgAS""?",0,3,fGpMvhoGIZtHgAS
+"How many times does the letter 'r' appear in the following text: ""banana apple assessment""?",0,1,banana apple assessment
+"How many times does the letter 'o' appear in the following text: ""BANANA ACCOMMODATION OCCURRENCE""?",4,1,BANANA ACCOMMODATION OCCURRENCE
+"How many times does the letter 'q' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'l' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'q' appear in the following text: ""bWXLLspCapfDbwc""?",0,3,bWXLLspCapfDbwc
+"How many times does the letter 'y' appear in the following text: ""elephant Mississippi Alphabet""?",0,1,elephant Mississippi Alphabet
+"How many times does the letter 'k' appear in the following text: ""Aax)_bj5qjvortzlz'(0""?",0,3,Aax)_bj5qjvortzlz'(0
+"How many times does the letter 'w' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",3,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'c' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'x' appear in the following text: ""queue banana Mississippi""?",0,1,queue banana Mississippi
+"How many times does the letter 's' appear in the following text: ""INTELLIGENCE""?",0,0,INTELLIGENCE
+"How many times does the letter 'o' appear in the following text: ""queue banana occurrence""?",1,1,queue banana occurrence
+"How many times does the letter 't' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",9,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'o' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",7,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'p' appear in the following text: ""Cherry""?",0,0,Cherry
+"How many times does the letter 's' appear in the following text: ""ELEPHANT""?",0,0,ELEPHANT
+"How many times does the letter 'k' appear in the following text: ""banana Mississippi banana""?",0,1,banana Mississippi banana
+"How many times does the letter 'z' appear in the following text: ""Banana""?",0,0,Banana
+"How many times does the letter 'z' appear in the following text: ""elephant elephant elephant""?",0,1,elephant elephant elephant
+"How many times does the letter 'q' appear in the following text: ""Syzygy syzygy accommodation""?",0,1,Syzygy syzygy accommodation
+"How many times does the letter 'u' appear in the following text: ""The weather in the mountains can Change quite rapidly within a matter of minutes.""?",3,2,The weather in the mountains can Change quite rapidly within a matter of minutes.
+"How many times does the letter 'e' appear in the following text: ""QUEUE ALPHABET BANANA""?",3,1,QUEUE ALPHABET BANANA
+"How many times does the letter 'k' appear in the following text: ""BANANA BANANA INTELLIGENCE""?",0,1,BANANA BANANA INTELLIGENCE
+"How many times does the letter 'f' appear in the following text: ""ELEPHANT ALPHABET HIPPOPOTAMUS""?",0,1,ELEPHANT ALPHABET HIPPOPOTAMUS
+"How many times does the letter 'n' appear in the following text: ""The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",5,2,The quick Brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'l' appear in the following text: ""accommodation hippopotamus success""?",0,1,accommodation hippopotamus success
+"How many times does the letter 'n' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",7,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'k' appear in the following text: ""apple occurrence assessment""?",0,1,apple occurrence assessment
+"How many times does the letter 's' appear in the following text: ""CHERRY""?",0,0,CHERRY
+"How many times does the letter 'q' appear in the following text: ""apple assessment rhythm""?",0,1,apple assessment rhythm
+"How many times does the letter 'v' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'g' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 't' appear in the following text: ""^FX,AWpV]Jz<vK1FE[pU""?",0,3,"^FX,AWpV]Jz<vK1FE[pU"
+"How many times does the letter 'm' appear in the following text: ""ALPHABET""?",0,0,ALPHABET
+"How many times does the letter 'j' appear in the following text: ""ASSESSMENT QUEUE BANANA""?",0,1,ASSESSMENT QUEUE BANANA
+"How many times does the letter 'z' appear in the following text: ""SYZYGY""?",1,0,SYZYGY
+"How many times does the letter 'a' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",7,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'h' appear in the following text: ""Hippopotamus""?",1,0,Hippopotamus
+"How many times does the letter 't' appear in the following text: ""Data science involves extracting insights from Structured and unstructured data sources.""?",9,2,Data science involves extracting insights from Structured and unstructured data sources.
+"How many times does the letter 'm' appear in the following text: ""MISSISSIPPI SUCCESS SYZYGY""?",1,1,MISSISSIPPI SUCCESS SYZYGY
+"How many times does the letter 'n' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",5,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'g' appear in the following text: ""assessment""?",0,0,assessment
+"How many times does the letter 'f' appear in the following text: ""assessment""?",0,0,assessment
+"How many times does the letter 'r' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",5,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'k' appear in the following text: ""To be, or Not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, or Not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'b' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",0,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'c' appear in the following text: ""R(wt;n9l^'|]?bbop<+u""?",0,3,R(wt;n9l^'|]?bbop<+u
+"How many times does the letter 'k' appear in the following text: ""OCCURRENCE OCCURRENCE BANANA""?",0,1,OCCURRENCE OCCURRENCE BANANA
+"How many times does the letter 'y' appear in the following text: ""_GVSQ""-.?&@QCJPQQWKV""?",0,3,"_GVSQ""-.?&@QCJPQQWKV"
+"How many times does the letter 's' appear in the following text: ""BANANA MISSISSIPPI HIPPOPOTAMUS""?",5,1,BANANA MISSISSIPPI HIPPOPOTAMUS
+"How many times does the letter 'a' appear in the following text: ""spLVuszDFJKQfOJ""?",0,3,spLVuszDFJKQfOJ
+"How many times does the letter 'a' appear in the following text: ""Artificial Intelligence is transforming the way we interact with technology and each other.""?",7,2,Artificial Intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'g' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",2,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'r' appear in the following text: ""H[X3T=L8-?UW&&VR$HJ8""?",1,3,H[X3T=L8-?UW&&VR$HJ8
+"How many times does the letter 'c' appear in the following text: ""rhythm""?",0,0,rhythm
+"How many times does the letter 'n' appear in the following text: ""CHERRY OCCURRENCE ALPHABET""?",1,1,CHERRY OCCURRENCE ALPHABET
+"How many times does the letter 'x' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence Contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence Contains every letter of the alphabet.
+"How many times does the letter 'g' appear in the following text: ""ASSESSMENT QUEUE BANANA""?",0,1,ASSESSMENT QUEUE BANANA
+"How many times does the letter 'o' appear in the following text: ""occurrence Intelligence intelligence""?",1,1,occurrence Intelligence intelligence
+"How many times does the letter 'n' appear in the following text: ""cherry""?",0,0,cherry
+"How many times does the letter 'y' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",2,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'u' appear in the following text: ""OtfzXscMyAivzNP""?",0,3,OtfzXscMyAivzNP
+"How many times does the letter 'h' appear in the following text: ""hippopotamus accommodation syzygy""?",1,1,hippopotamus accommodation syzygy
+"How many times does the letter 'g' appear in the following text: ""BANANA ALPHABET QUEUE""?",0,1,BANANA ALPHABET QUEUE
+"How many times does the letter 'a' appear in the following text: ""Syzygy""?",0,0,Syzygy
+"How many times does the letter 'h' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",5,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'p' appear in the following text: ""apple apple elephant""?",5,1,apple apple elephant
+"How many times does the letter 'o' appear in the following text: ""BLRADMDCXYRSBTY""?",0,3,BLRADMDCXYRSBTY
+"How many times does the letter 'i' appear in the following text: ""assessment Intelligence apple""?",2,1,assessment Intelligence apple
+"How many times does the letter 'x' appear in the following text: ""OCCURRENCE ALPHABET INTELLIGENCE""?",0,1,OCCURRENCE ALPHABET INTELLIGENCE
+"How many times does the letter 'o' appear in the following text: ""Elephant accommodation assessment""?",3,1,Elephant accommodation assessment
+"How many times does the letter 'm' appear in the following text: ""ALPHABET OCCURRENCE CHERRY""?",0,1,ALPHABET OCCURRENCE CHERRY
+"How many times does the letter 'p' appear in the following text: ""Xvs@j]lh3fmx4gh[>&x_""?",0,3,Xvs@j]lh3fmx4gh[>&x_
+"How many times does the letter 'l' appear in the following text: ""In a hole in The ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",4,2,"In a hole in The ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'v' appear in the following text: ""alphabet banana elephant""?",0,1,alphabet banana elephant
+"How many times does the letter 's' appear in the following text: ""ELEPHANT HIPPOPOTAMUS ASSESSMENT""?",5,1,ELEPHANT HIPPOPOTAMUS ASSESSMENT
+"How many times does the letter 'v' appear in the following text: ""OCCURRENCE OCCURRENCE OCCURRENCE""?",0,1,OCCURRENCE OCCURRENCE OCCURRENCE
+"How many times does the letter 'd' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",5,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'c' appear in the following text: ""banana Syzygy Mississippi""?",0,1,banana Syzygy Mississippi
+"How many times does the letter 'k' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'u' appear in the following text: ""queue""?",2,0,queue
+"How many times does the letter 'w' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'm' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 't' appear in the following text: ""Lirrvnjqxfcpnzo""?",0,3,Lirrvnjqxfcpnzo
+"How many times does the letter 'i' appear in the following text: ""alphabet Syzygy elephant""?",0,1,alphabet Syzygy elephant
+"How many times does the letter 'n' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 's' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",4,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'b' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'l' appear in the following text: ""hippopotamus queue Banana""?",0,1,hippopotamus queue Banana
+"How many times does the letter 'k' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'u' appear in the following text: ""+2EY@SB|3.ZSXV99+FD'""?",0,3,+2EY@SB|3.ZSXV99+FD'
+"How many times does the letter 'y' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",2,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'a' appear in the following text: ""ALPHABET BANANA APPLE""?",6,1,ALPHABET BANANA APPLE
+"How many times does the letter 'c' appear in the following text: ""Elephant""?",0,0,Elephant
+"How many times does the letter 'g' appear in the following text: ""INTELLIGENCE""?",1,0,INTELLIGENCE
+"How many times does the letter 'q' appear in the following text: ""ACCOMMODATION INTELLIGENCE OCCURRENCE""?",0,1,ACCOMMODATION INTELLIGENCE OCCURRENCE
+"How many times does the letter 'd' appear in the following text: ""WqwJlOBmKtsKZlC""?",0,3,WqwJlOBmKtsKZlC
+"How many times does the letter 'p' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",1,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'o' appear in the following text: ""INTELLIGENCE OCCURRENCE ACCOMMODATION""?",4,1,INTELLIGENCE OCCURRENCE ACCOMMODATION
+"How many times does the letter 'a' appear in the following text: ""Psxbdyxfkmmkszw""?",0,3,Psxbdyxfkmmkszw
+"How many times does the letter 'h' appear in the following text: ""occurrence banana syzygy""?",0,1,occurrence banana syzygy
+"How many times does the letter 'a' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 'f' appear in the following text: ""success""?",0,0,success
+"How many times does the letter 'f' appear in the following text: ""banana rhythm elephant""?",0,1,banana rhythm elephant
+"How many times does the letter 'g' appear in the following text: ""ASSESSMENT OCCURRENCE CHERRY""?",0,1,ASSESSMENT OCCURRENCE CHERRY
+"How many times does the letter 's' appear in the following text: ""queue""?",0,0,queue
+"How many times does the letter 'c' appear in the following text: ""In a hole in the ground there lived A hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived A hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'c' appear in the following text: ""lf?&'!=@hCgm(}EkNi""_""?",1,3,"lf?&'!=@hCgm(}EkNi""_"
+"How many times does the letter 'n' appear in the following text: ""rhythm Alphabet banana""?",2,1,rhythm Alphabet banana
+"How many times does the letter 'i' appear in the following text: ""Alphabet Mississippi assessment""?",4,1,Alphabet Mississippi assessment
+"How many times does the letter 'f' appear in the following text: ""RHYTHM RHYTHM ELEPHANT""?",0,1,RHYTHM RHYTHM ELEPHANT
+"How many times does the letter 'n' appear in the following text: ""ircLvEUYrpbIULt""?",0,3,ircLvEUYrpbIULt
+"How many times does the letter 'n' appear in the following text: ""Syzygy""?",0,0,Syzygy
+"How many times does the letter 'k' appear in the following text: ""hippopotamus banana banana""?",0,1,hippopotamus banana banana
+"How many times does the letter 'u' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",3,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'l' appear in the following text: ""MUSQKJAGPPGKQNC""?",0,3,MUSQKJAGPPGKQNC
+"How many times does the letter 'n' appear in the following text: ""In a hole in the Ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",5,2,"In a hole in the Ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'r' appear in the following text: ""elephant queue rhythm""?",1,1,elephant queue rhythm
+"How many times does the letter 'j' appear in the following text: ""ROI$L0<2%W_A#-H8V4Y}""?",0,3,ROI$L0<2%W_A#-H8V4Y}
+"How many times does the letter 'z' appear in the following text: ""ALPHABET ASSESSMENT ALPHABET""?",0,1,ALPHABET ASSESSMENT ALPHABET
+"How many times does the letter 'b' appear in the following text: ""HIPPOPOTAMUS""?",0,0,HIPPOPOTAMUS
+"How many times does the letter 'm' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'r' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",4,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'g' appear in the following text: ""INTELLIGENCE SYZYGY BANANA""?",2,1,INTELLIGENCE SYZYGY BANANA
+"How many times does the letter 's' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",8,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 's' appear in the following text: ""Banana apple apple""?",0,1,Banana apple apple
+"How many times does the letter 'n' appear in the following text: ""uymJihczERfihiC""?",0,3,uymJihczERfihiC
+"How many times does the letter 'j' appear in the following text: ""Syzygy occurrence alphabet""?",0,1,Syzygy occurrence alphabet
+"How many times does the letter 'k' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'z' appear in the following text: ""BANANA APPLE INTELLIGENCE""?",0,1,BANANA APPLE INTELLIGENCE
+"How many times does the letter 'x' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",0,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'h' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",5,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'o' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",4,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'r' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",3,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'y' appear in the following text: ""Cqcedskrfoszvoc""?",0,3,Cqcedskrfoszvoc
+"How many times does the letter 'm' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'p' appear in the following text: ""Maiziubusezxuom""?",0,3,Maiziubusezxuom
+"How many times does the letter 't' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",11,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'e' appear in the following text: ""To be, or not to be, that is the Question: whether 'tis nobler in the mind to suffer.""?",9,2,"To be, or not to be, that is the Question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'f' appear in the following text: "".[vefl1i!6j#wdx@.?ni""?",1,3,.[vefl1i!6j#wdx@.?ni
+"How many times does the letter 'o' appear in the following text: ""HVIRBHJLRDQMWKZ""?",0,3,HVIRBHJLRDQMWKZ
+"How many times does the letter 'i' appear in the following text: ""B@S?|W*-}#}H.^-?#""M!""?",0,3,"B@S?|W*-}#}H.^-?#""M!"
+"How many times does the letter 'p' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",2,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'b' appear in the following text: ""alphabet elephant apple""?",1,1,alphabet elephant apple
+"How many times does the letter 'v' appear in the following text: ""ACCOMMODATION""?",0,0,ACCOMMODATION
+"How many times does the letter 'm' appear in the following text: ""'W5*AN3eSeAx$A'}?<}&""?",0,3,'W5*AN3eSeAx$A'}?<}&
+"How many times does the letter 'h' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",5,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'q' appear in the following text: ""OCCURRENCE CHERRY OCCURRENCE""?",0,1,OCCURRENCE CHERRY OCCURRENCE
+"How many times does the letter 'c' appear in the following text: ""Banana""?",0,0,Banana
+"How many times does the letter 'm' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",1,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 't' appear in the following text: ""XLMEVONNHVPSLNV""?",0,3,XLMEVONNHVPSLNV
+"How many times does the letter 'c' appear in the following text: ""OCCURRENCE""?",3,0,OCCURRENCE
+"How many times does the letter 'y' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",2,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'p' appear in the following text: ""elephant alphabet cherry""?",2,1,elephant alphabet cherry
+"How many times does the letter 'p' appear in the following text: ""In a hole in the ground there lived a Hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a Hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'h' appear in the following text: ""Lgspcoixrsdngnl""?",0,3,Lgspcoixrsdngnl
+"How many times does the letter 'l' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",1,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'r' appear in the following text: ""J%;C_AKCL_^Q([/HUTFA""?",0,3,J%;C_AKCL_^Q([/HUTFA
+"How many times does the letter 'b' appear in the following text: ""RHYTHM OCCURRENCE ALPHABET""?",1,1,RHYTHM OCCURRENCE ALPHABET
+"How many times does the letter 'q' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'p' appear in the following text: ""ZR*!AN""P5""]U7;C3021R""?",1,3,"ZR*!AN""P5""]U7;C3021R"
+"How many times does the letter 's' appear in the following text: ""RHYTHM HIPPOPOTAMUS INTELLIGENCE""?",1,1,RHYTHM HIPPOPOTAMUS INTELLIGENCE
+"How many times does the letter 'r' appear in the following text: ""8/|ed#uesm+)fns{dc[n""?",0,3,8/|ed#uesm+)fns{dc[n
+"How many times does the letter 'h' appear in the following text: ""intelligence Mississippi syzygy""?",0,1,intelligence Mississippi syzygy
+"How many times does the letter 'i' appear in the following text: ""Alphabet intelligence assessment""?",2,1,Alphabet intelligence assessment
+"How many times does the letter 'j' appear in the following text: ""@'RZ,5RKZBY<NK|@]XI}""?",0,3,"@'RZ,5RKZBY<NK|@]XI}"
+"How many times does the letter 'i' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",5,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'j' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'm' appear in the following text: ""Bfrfnognonzorqp""?",0,3,Bfrfnognonzorqp
+"How many times does the letter 'x' appear in the following text: ""TICWIDTVBAMVQKJ""?",0,3,TICWIDTVBAMVQKJ
+"How many times does the letter 'n' appear in the following text: ""fcMXWqMYtrdaPum""?",0,3,fcMXWqMYtrdaPum
+"How many times does the letter 'h' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",5,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'j' appear in the following text: ""hippopotamus""?",0,0,hippopotamus
+"How many times does the letter 'v' appear in the following text: ""J$4ydhz]7c""_pj:]nw#g""?",0,3,"J$4ydhz]7c""_pj:]nw#g"
+"How many times does the letter 'j' appear in the following text: ""Assessment cherry assessment""?",0,1,Assessment cherry assessment
+"How many times does the letter 'f' appear in the following text: ""RHYTHM OCCURRENCE INTELLIGENCE""?",0,1,RHYTHM OCCURRENCE INTELLIGENCE
+"How many times does the letter 'g' appear in the following text: ""DQFTFFZIQJFAOYZ""?",0,3,DQFTFFZIQJFAOYZ
+"How many times does the letter 'e' appear in the following text: ""The weather in the mountains can change quite Rapidly within a matter of minutes.""?",8,2,The weather in the mountains can change quite Rapidly within a matter of minutes.
+"How many times does the letter 'd' appear in the following text: ""APPLE INTELLIGENCE QUEUE""?",0,1,APPLE INTELLIGENCE QUEUE
+"How many times does the letter 'm' appear in the following text: ""In a hole In the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole In the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'k' appear in the following text: ""OXLZEZFCOSITLNP""?",0,3,OXLZEZFCOSITLNP
+"How many times does the letter 'r' appear in the following text: ""accommodation banana occurrence""?",2,1,accommodation banana occurrence
+"How many times does the letter 'p' appear in the following text: ""[_NO""ZE?F)AQ]KJQOD2C""?",0,3,"[_NO""ZE?F)AQ]KJQOD2C"
+"How many times does the letter 'w' appear in the following text: ""QUEUE""?",0,0,QUEUE
+"How many times does the letter 'h' appear in the following text: ""intelligence success banana""?",0,1,intelligence success banana
+"How many times does the letter 't' appear in the following text: ""To be, or not to be, that is the Question: whether 'tis nobler in the mind to suffer.""?",11,2,"To be, or not to be, that is the Question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'i' appear in the following text: ""INTELLIGENCE ASSESSMENT QUEUE""?",2,1,INTELLIGENCE ASSESSMENT QUEUE
+"How many times does the letter 'i' appear in the following text: ""INTELLIGENCE""?",2,0,INTELLIGENCE
+"How many times does the letter 'r' appear in the following text: ""OCCURRENCE INTELLIGENCE ACCOMMODATION""?",2,1,OCCURRENCE INTELLIGENCE ACCOMMODATION
+"How many times does the letter 'j' appear in the following text: ""Cuhkmcawufkmtit""?",0,3,Cuhkmcawufkmtit
+"How many times does the letter 'k' appear in the following text: "",C4TSU!7UB!,71'GKW@)""?",1,3,",C4TSU!7UB!,71'GKW@)"
+"How many times does the letter 'r' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",3,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'j' appear in the following text: ""apple success intelligence""?",0,1,apple success intelligence
+"How many times does the letter 'a' appear in the following text: ""B!ONIS?/9R+YK14JC.7L""?",0,3,B!ONIS?/9R+YK14JC.7L
+"How many times does the letter 'v' appear in the following text: ""BANANA HIPPOPOTAMUS ACCOMMODATION""?",0,1,BANANA HIPPOPOTAMUS ACCOMMODATION
+"How many times does the letter 'c' appear in the following text: ""INTELLIGENCE""?",1,0,INTELLIGENCE
+"How many times does the letter 'y' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'y' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",1,2,The weather in the mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'c' appear in the following text: ""CHERRY BANANA MISSISSIPPI""?",1,1,CHERRY BANANA MISSISSIPPI
+"How many times does the letter 'v' appear in the following text: ""ELEPHANT""?",0,0,ELEPHANT
+"How many times does the letter 'g' appear in the following text: ""QUEUE""?",0,0,QUEUE
+"How many times does the letter 'p' appear in the following text: ""(M_CQ|ZYCBNKN0MQZ,>Q""?",0,3,"(M_CQ|ZYCBNKN0MQZ,>Q"
+"How many times does the letter 'w' appear in the following text: ""ACCOMMODATION""?",0,0,ACCOMMODATION
+"How many times does the letter 'x' appear in the following text: ""SUCCESS QUEUE OCCURRENCE""?",0,1,SUCCESS QUEUE OCCURRENCE
+"How many times does the letter 'z' appear in the following text: ""RHYTHM INTELLIGENCE ASSESSMENT""?",0,1,RHYTHM INTELLIGENCE ASSESSMENT
+"How many times does the letter 'k' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'g' appear in the following text: ""ALPHABET APPLE BANANA""?",0,1,ALPHABET APPLE BANANA
+"How many times does the letter 'q' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'p' appear in the following text: ""MISSISSIPPI""?",2,0,MISSISSIPPI
+"How many times does the letter 'd' appear in the following text: ""[|f-#=+y?rp}rifo*d?w""?",1,3,[|f-#=+y?rp}rifo*d?w
+"How many times does the letter 't' appear in the following text: ""Data science involves extracting insights from structured and unstructured data Sources.""?",9,2,Data science involves extracting insights from structured and unstructured data Sources.
+"How many times does the letter 'v' appear in the following text: ""YZLBFPATCDGIRXK""?",0,3,YZLBFPATCDGIRXK
+"How many times does the letter 'z' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'n' appear in the following text: ""assessment""?",1,0,assessment
+"How many times does the letter 's' appear in the following text: ""APPLE ELEPHANT HIPPOPOTAMUS""?",1,1,APPLE ELEPHANT HIPPOPOTAMUS
+"How many times does the letter 'r' appear in the following text: ""CHERRY""?",2,0,CHERRY
+"How many times does the letter 's' appear in the following text: ""elephant""?",0,0,elephant
+"How many times does the letter 't' appear in the following text: ""occurrence Occurrence hippopotamus""?",1,1,occurrence Occurrence hippopotamus
+"How many times does the letter 'f' appear in the following text: ""TIMTIAGGTOKXTUV""?",0,3,TIMTIAGGTOKXTUV
+"How many times does the letter 'e' appear in the following text: ""KPYTYDVDYYCSYJI""?",0,3,KPYTYDVDYYCSYJI
+"How many times does the letter 'h' appear in the following text: ""}qn1/(zl4!]fpo.vr'vm""?",0,3,}qn1/(zl4!]fpo.vr'vm
+"How many times does the letter 'g' appear in the following text: ""C$Z#I_DSQ*|KI<&F]FFX""?",0,3,C$Z#I_DSQ*|KI<&F]FFX
+"How many times does the letter 'k' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'g' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'i' appear in the following text: ""h0F^5}5U&A[lsPsLGzh9""?",0,3,h0F^5}5U&A[lsPsLGzh9
+"How many times does the letter 'm' appear in the following text: ""SDXKVGDVHSBUJQL""?",0,3,SDXKVGDVHSBUJQL
+"How many times does the letter 'i' appear in the following text: ""Data science involves extracting insights from structured and Unstructured data sources.""?",5,2,Data science involves extracting insights from structured and Unstructured data sources.
+"How many times does the letter 'x' appear in the following text: ""RHYTHM CHERRY BANANA""?",0,1,RHYTHM CHERRY BANANA
+"How many times does the letter 'j' appear in the following text: ""G]E6PASE5AGOR|PK/UXI""?",0,3,G]E6PASE5AGOR|PK/UXI
+"How many times does the letter 'g' appear in the following text: ""HIPPOPOTAMUS CHERRY CHERRY""?",0,1,HIPPOPOTAMUS CHERRY CHERRY
+"How many times does the letter 'a' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'e' appear in the following text: ""ALPHABET""?",1,0,ALPHABET
+"How many times does the letter 'b' appear in the following text: ""1po(s+w{^08lds4bdbdz""?",2,3,1po(s+w{^08lds4bdbdz
+"How many times does the letter 'g' appear in the following text: ""SV+ED4QA}Q(I'DF-L[Z2""?",0,3,SV+ED4QA}Q(I'DF-L[Z2
+"How many times does the letter 'b' appear in the following text: ""QOJFSDSGQVDMSRT""?",0,3,QOJFSDSGQVDMSRT
+"How many times does the letter 't' appear in the following text: ""alphabet""?",1,0,alphabet
+"How many times does the letter 'x' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'k' appear in the following text: ""hippopotamus apple intelligence""?",0,1,hippopotamus apple intelligence
+"How many times does the letter 'i' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",9,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'h' appear in the following text: ""Bwabtmedzvqnjnt""?",0,3,Bwabtmedzvqnjnt
+"How many times does the letter 'p' appear in the following text: ""MISSISSIPPI ELEPHANT BANANA""?",3,1,MISSISSIPPI ELEPHANT BANANA
+"How many times does the letter 'h' appear in the following text: ""Rhythm""?",2,0,Rhythm
+"How many times does the letter 'c' appear in the following text: ""syzygy queue Rhythm""?",0,1,syzygy queue Rhythm
+"How many times does the letter 'g' appear in the following text: ""Data science involves extracting insights from structured and unstructured data sources.""?",2,2,Data science involves extracting insights from structured and unstructured data sources.
+"How many times does the letter 'o' appear in the following text: ""Intelligence syzygy rhythm""?",0,1,Intelligence syzygy rhythm
+"How many times does the letter 'z' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 's' appear in the following text: ""intelligence""?",0,0,intelligence
+"How many times does the letter 'w' appear in the following text: """"r&ssu@jg63nrl)o)+ay""?",0,3,"""r&ssu@jg63nrl)o)+ay"
+"How many times does the letter 'w' appear in the following text: ""DZXHCTEQGORIXMF""?",0,3,DZXHCTEQGORIXMF
+"How many times does the letter 'g' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",0,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'g' appear in the following text: "".@xorfoyh.p<mq.ze4qe""?",0,3,.@xorfoyh.p<mq.ze4qe
+"How many times does the letter 'q' appear in the following text: ""6G1+}{>PR(+C+7dPJ)h4""?",0,3,6G1+}{>PR(+C+7dPJ)h4
+"How many times does the letter 'y' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'p' appear in the following text: ""@nl>rxwgqrwdlq!&@+pq""?",1,3,@nl>rxwgqrwdlq!&@+pq
+"How many times does the letter 'q' appear in the following text: ""ASSESSMENT ELEPHANT BANANA""?",0,1,ASSESSMENT ELEPHANT BANANA
+"How many times does the letter 'm' appear in the following text: ""ACCOMMODATION INTELLIGENCE ELEPHANT""?",2,1,ACCOMMODATION INTELLIGENCE ELEPHANT
+"How many times does the letter 'c' appear in the following text: ""The weather in the Mountains can change quite rapidly within a matter of minutes.""?",2,2,The weather in the Mountains can change quite rapidly within a matter of minutes.
+"How many times does the letter 'o' appear in the following text: ""MISSISSIPPI ALPHABET ALPHABET""?",0,1,MISSISSIPPI ALPHABET ALPHABET
+"How many times does the letter 'f' appear in the following text: ""Sxit3i#v.i2q<omk|uvo""?",0,3,Sxit3i#v.i2q<omk|uvo
+"How many times does the letter 'w' appear in the following text: ""ASSESSMENT OCCURRENCE ASSESSMENT""?",0,1,ASSESSMENT OCCURRENCE ASSESSMENT
+"How many times does the letter 'd' appear in the following text: ""Banana assessment intelligence""?",0,1,Banana assessment intelligence
+"How many times does the letter 'k' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",0,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'p' appear in the following text: ""hippopotamus""?",3,0,hippopotamus
+"How many times does the letter 'f' appear in the following text: ""elephant accommodation occurrence""?",0,1,elephant accommodation occurrence
+"How many times does the letter 'n' appear in the following text: ""occurrence intelligence rhythm""?",3,1,occurrence intelligence rhythm
+"How many times does the letter 'j' appear in the following text: ""SUCCESS ACCOMMODATION BANANA""?",0,1,SUCCESS ACCOMMODATION BANANA
+"How many times does the letter 'v' appear in the following text: ""OCCURRENCE ALPHABET ALPHABET""?",0,1,OCCURRENCE ALPHABET ALPHABET
+"How many times does the letter 'y' appear in the following text: ""accommodation""?",0,0,accommodation
+"How many times does the letter 'p' appear in the following text: ""?kx?||}k6t''yb]cbu/e""?",0,3,?kx?||}k6t''yb]cbu/e
+"How many times does the letter 'o' appear in the following text: ""Cherry hippopotamus intelligence""?",2,1,Cherry hippopotamus intelligence
+"How many times does the letter 'j' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'e' appear in the following text: ""INTELLIGENCE HIPPOPOTAMUS HIPPOPOTAMUS""?",3,1,INTELLIGENCE HIPPOPOTAMUS HIPPOPOTAMUS
+"How many times does the letter 'n' appear in the following text: ""syzygy intelligence occurrence""?",3,1,syzygy intelligence occurrence
+"How many times does the letter 'e' appear in the following text: ""intelligence Hippopotamus cherry""?",4,1,intelligence Hippopotamus cherry
+"How many times does the letter 'n' appear in the following text: ""QUEUE""?",0,0,QUEUE
+"How many times does the letter 'w' appear in the following text: ""INTELLIGENCE ACCOMMODATION ACCOMMODATION""?",0,1,INTELLIGENCE ACCOMMODATION ACCOMMODATION
+"How many times does the letter 'y' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",2,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'q' appear in the following text: ""UXKJTRKRJZUABMS""?",0,3,UXKJTRKRJZUABMS
+"How many times does the letter 'a' appear in the following text: ""QUEUE""?",0,0,QUEUE
+"How many times does the letter 'n' appear in the following text: ""occurrence""?",1,0,occurrence
+"How many times does the letter 'm' appear in the following text: ""APPLE""?",0,0,APPLE
+"How many times does the letter 'b' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'a' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'u' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",2,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'r' appear in the following text: ""BANANA HIPPOPOTAMUS APPLE""?",0,1,BANANA HIPPOPOTAMUS APPLE
+"How many times does the letter 'v' appear in the following text: ""M,pek^vqb3rwd^qc9nzb""?",1,3,"M,pek^vqb3rwd^qc9nzb"
+"How many times does the letter 'k' appear in the following text: ""CHERRY""?",0,0,CHERRY
+"How many times does the letter 'e' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",8,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'y' appear in the following text: ""Benofeggheqqovl""?",0,3,Benofeggheqqovl
+"How many times does the letter 'i' appear in the following text: ""BANANA""?",0,0,BANANA
+"How many times does the letter 'y' appear in the following text: ""LOSRHMHVNNQTNTE""?",0,3,LOSRHMHVNNQTNTE
+"How many times does the letter 'b' appear in the following text: ""<3;AR&6!|P>K!AB&P:<O""?",1,3,<3;AR&6!|P>K!AB&P:<O
+"How many times does the letter 'm' appear in the following text: ""FOOTQQAHOFXBRVD""?",0,3,FOOTQQAHOFXBRVD
+"How many times does the letter 'w' appear in the following text: ""Rhythm""?",0,0,Rhythm
+"How many times does the letter 'm' appear in the following text: ""'R+Y0+gun.v)i>GZg$/.""?",0,3,'R+Y0+gun.v)i>GZg$/.
+"How many times does the letter 'k' appear in the following text: ""Fedufhswrbgchsf""?",0,3,Fedufhswrbgchsf
+"How many times does the letter 'u' appear in the following text: ""assessment""?",0,0,assessment
+"How many times does the letter 'p' appear in the following text: ""SYZYGY""?",0,0,SYZYGY
+"How many times does the letter 'e' appear in the following text: ""Data science involves extracting Insights from structured and unstructured data sources.""?",7,2,Data science involves extracting Insights from structured and unstructured data sources.
+"How many times does the letter 'z' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'y' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",2,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'd' appear in the following text: ""elephant intelligence syzygy""?",0,1,elephant intelligence syzygy
+"How many times does the letter 'd' appear in the following text: ""MISSISSIPPI""?",0,0,MISSISSIPPI
+"How many times does the letter 'd' appear in the following text: ""CSEXSYPJHGZPJUE""?",0,3,CSEXSYPJHGZPJUE
+"How many times does the letter 'l' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'q' appear in the following text: ""Success""?",0,0,Success
+"How many times does the letter 't' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'h' appear in the following text: ""Hippopotamus""?",1,0,Hippopotamus
+"How many times does the letter 'h' appear in the following text: ""Assessment""?",0,0,Assessment
+"How many times does the letter 'g' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",2,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'x' appear in the following text: ""OCCURRENCE""?",0,0,OCCURRENCE
+"How many times does the letter 'p' appear in the following text: ""queue accommodation alphabet""?",1,1,queue accommodation alphabet
+"How many times does the letter 'b' appear in the following text: ""x1zp]o;:Unb|!Q3&l9uF""?",1,3,x1zp]o;:Unb|!Q3&l9uF
+"How many times does the letter 'w' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, Wet hole, but a hobbit-hole.""?",1,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, Wet hole, but a hobbit-hole."
+"How many times does the letter 'f' appear in the following text: ""rhythm""?",0,0,rhythm
+"How many times does the letter 'p' appear in the following text: ""queue occurrence assessment""?",0,1,queue occurrence assessment
+"How many times does the letter 'u' appear in the following text: ""Intelligence""?",0,0,Intelligence
+"How many times does the letter 't' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",9,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'm' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",0,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'a' appear in the following text: ""BANANA""?",3,0,BANANA
+"How many times does the letter 'm' appear in the following text: ""ZGhGWoduZeTnYwn""?",0,3,ZGhGWoduZeTnYwn
+"How many times does the letter 'p' appear in the following text: ""Syzygy banana intelligence""?",0,1,Syzygy banana intelligence
+"How many times does the letter 'l' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",4,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'i' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",6,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'a' appear in the following text: ""Occurrence""?",0,0,Occurrence
+"How many times does the letter 'n' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",5,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 't' appear in the following text: ""QUEUE OCCURRENCE MISSISSIPPI""?",0,1,QUEUE OCCURRENCE MISSISSIPPI
+"How many times does the letter 'w' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",3,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'b' appear in the following text: ""Artificial intelligence is transforming the way we interact with technology and each other.""?",0,2,Artificial intelligence is transforming the way we interact with technology and each other.
+"How many times does the letter 'f' appear in the following text: ""ELEPHANT QUEUE QUEUE""?",0,1,ELEPHANT QUEUE QUEUE
+"How many times does the letter 'b' appear in the following text: ""Cherry banana queue""?",1,1,Cherry banana queue
+"How many times does the letter 'w' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'j' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",1,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'm' appear in the following text: ""assessment success Mississippi""?",2,1,assessment success Mississippi
+"How many times does the letter 'k' appear in the following text: ""The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.""?",1,2,The quick brown fox jumps over the lazy dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'r' appear in the following text: ""Mississippi elephant Accommodation""?",0,1,Mississippi elephant Accommodation
+"How many times does the letter 'f' appear in the following text: ""Mnoadbpndcsvegz""?",0,3,Mnoadbpndcsvegz
+"How many times does the letter 'u' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",2,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'z' appear in the following text: ""QUEUE ACCOMMODATION BANANA""?",0,1,QUEUE ACCOMMODATION BANANA
+"How many times does the letter 'c' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",6,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'p' appear in the following text: ""/""OIJNDD2R%RJ@VUBM+T""?",0,3,"/""OIJNDD2R%RJ@VUBM+T"
+"How many times does the letter 'c' appear in the following text: ""SUCCESS INTELLIGENCE OCCURRENCE""?",6,1,SUCCESS INTELLIGENCE OCCURRENCE
+"How many times does the letter 'z' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'z' appear in the following text: ""UQ_+""'HV{C{T>URW)6NF""?",0,3,"UQ_+""'HV{C{T>URW)6NF"
+"How many times does the letter 'm' appear in the following text: ""occurrence Occurrence Mississippi""?",1,1,occurrence Occurrence Mississippi
+"How many times does the letter 'a' appear in the following text: ""Banana""?",3,0,Banana
+"How many times does the letter 'c' appear in the following text: ""Syzygy""?",0,0,Syzygy
+"How many times does the letter 'r' appear in the following text: ""THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.""?",3,2,THE WEATHER IN THE MOUNTAINS CAN CHANGE QUITE RAPIDLY WITHIN A MATTER OF MINUTES.
+"How many times does the letter 'e' appear in the following text: ""Qgumhrynsuwyawj""?",0,3,Qgumhrynsuwyawj
+"How many times does the letter 'l' appear in the following text: ""banana rhythm Apple""?",1,1,banana rhythm Apple
+"How many times does the letter 'b' appear in the following text: ""banana Syzygy assessment""?",1,1,banana Syzygy assessment
+"How many times does the letter 'i' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",6,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'l' appear in the following text: ""In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole.""?",4,2,"In a hole in the ground there lived a hobbit. Not a nasty, dirty, wet hole, but a hobbit-hole."
+"How many times does the letter 'u' appear in the following text: ""oLW.!'yl/nZ-&+v1=umf""?",1,3,oLW.!'yl/nZ-&+v1=umf
+"How many times does the letter 'l' appear in the following text: ""Cherry success accommodation""?",0,1,Cherry success accommodation
+"How many times does the letter 't' appear in the following text: ""INTELLIGENCE OCCURRENCE OCCURRENCE""?",1,1,INTELLIGENCE OCCURRENCE OCCURRENCE
+"How many times does the letter 'x' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",0,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'e' appear in the following text: ""Jg;)db5ct9y_/zn-grs.""?",0,3,Jg;)db5ct9y_/zn-grs.
+"How many times does the letter 'r' appear in the following text: ""Nlukcjpbowuwxaq""?",0,3,Nlukcjpbowuwxaq
+"How many times does the letter 'w' appear in the following text: ""GGVIRXUSCPOEFHI""?",0,3,GGVIRXUSCPOEFHI
+"How many times does the letter 'e' appear in the following text: ""queue elephant apple""?",5,1,queue elephant apple
+"How many times does the letter 'o' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",7,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'k' appear in the following text: ""IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE.""?",0,2,"IN A HOLE IN THE GROUND THERE LIVED A HOBBIT. NOT A NASTY, DIRTY, WET HOLE, BUT A HOBBIT-HOLE."
+"How many times does the letter 'u' appear in the following text: ""CKMAYQRLOQZMWKV""?",0,3,CKMAYQRLOQZMWKV
+"How many times does the letter 'm' appear in the following text: ""apple""?",0,0,apple
+"How many times does the letter 'j' appear in the following text: ""DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.""?",0,2,DATA SCIENCE INVOLVES EXTRACTING INSIGHTS FROM STRUCTURED AND UNSTRUCTURED DATA SOURCES.
+"How many times does the letter 'i' appear in the following text: ""occurrence intelligence elephant""?",2,1,occurrence intelligence elephant
+"How many times does the letter 'l' appear in the following text: ""The quick brown fox jumps over the lazy Dog. This sentence contains every letter of the alphabet.""?",3,2,The quick brown fox jumps over the lazy Dog. This sentence contains every letter of the alphabet.
+"How many times does the letter 'b' appear in the following text: ""Mississippi""?",0,0,Mississippi
+"How many times does the letter 'q' appear in the following text: ""APPLE""?",0,0,APPLE
+"How many times does the letter 'c' appear in the following text: ""9UW':FL@Y[NO*}LWH(HI""?",0,3,9UW':FL@Y[NO*}LWH(HI
+"How many times does the letter 'a' appear in the following text: ""ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.""?",7,2,ARTIFICIAL INTELLIGENCE IS TRANSFORMING THE WAY WE INTERACT WITH TECHNOLOGY AND EACH OTHER.
+"How many times does the letter 'v' appear in the following text: ""ALPHABET OCCURRENCE ASSESSMENT""?",0,1,ALPHABET OCCURRENCE ASSESSMENT
+"How many times does the letter 'o' appear in the following text: ""ENZQUSMGZYKDRZM""?",0,3,ENZQUSMGZYKDRZM
+"How many times does the letter 't' appear in the following text: ""MH@FK4!S""""M5YB*R:C?Q""?",0,3,"MH@FK4!S""""M5YB*R:C?Q"
+"How many times does the letter 'i' appear in the following text: ""hippopotamus""?",1,0,hippopotamus
+"How many times does the letter 'u' appear in the following text: ""TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER.""?",2,2,"TO BE, OR NOT TO BE, THAT IS THE QUESTION: WHETHER 'TIS NOBLER IN THE MIND TO SUFFER."
+"How many times does the letter 'a' appear in the following text: ""THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.""?",4,2,THE QUICK BROWN FOX JUMPS OVER THE LAZY DOG. THIS SENTENCE CONTAINS EVERY LETTER OF THE ALPHABET.
+"How many times does the letter 'k' appear in the following text: ""'D5IVKZTTX;XAQNUFGZ2""?",1,3,'D5IVKZTTX;XAQNUFGZ2
+"How many times does the letter 'm' appear in the following text: ""To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer.""?",1,2,"To be, or not to be, that is the question: whether 'tis nobler in the mind to suffer."
+"How many times does the letter 'x' appear in the following text: ""Accommodation""?",0,0,Accommodation
+"How many times does the letter 'o' appear in the following text: ""FbhSHuVmHrlLLIt""?",0,3,FbhSHuVmHrlLLIt
+"How many times does the letter 'l' appear in the following text: ""The weather in the mountains can change quite rapidly within a matter of minutes.""?",1,2,The weather in the mountains can change quite rapidly within a matter of minutes.
