@@ -103,7 +103,9 @@ def _grpo_forward(self, model, prompts):
 
     # --- Metrics (flat dict of detached tensors) ---
     clip_frac = ((ratio - 1.0).abs() > eps).float().mul(shift_mask).sum() / denom
-    entropy = (self._token_entropy(logits.detach()) * shift_mask).sum() / denom
+    # [Fix] slice entropy to [B, T-1] so it aligns with shift_mask:
+    # entropy[t] is from the logit at position t, which predicts token t+1
+    entropy = (self._token_entropy(logits.detach())[:, :-1] * shift_mask).sum() / denom
     comp_len = cmask.sum(1).float().mean()
 
     metrics = {
@@ -173,3 +175,20 @@ g = m.last_logits.grad
 assert g is not None and torch.isfinite(g).all() and g.abs().sum().item() > 0, "bad gradient"
 print(f"OK  adv mean={adv.mean().item():.2e}  loss={out['loss'].item():.4f}  "
       f"|grad| sum={g.abs().sum().item():.4f}  finite={bool(torch.isfinite(g).all())}")
+
+# ---- Second check: beta=0.1 + ref_model -> KL loss & grads must be finite & nonzero ----
+t.args.beta = 0.1
+t.ref_model = DummyModel()
+
+m2 = DummyModel()
+out2 = t._grpo_forward(m2, list(range(B)))
+
+kl_val = out2["metrics"]["kl"]
+assert torch.isfinite(kl_val) and kl_val.item() > 0.0, f"kl not finite or zero: {kl_val.item()}"
+assert torch.isfinite(out2["loss"]), f"loss not finite: {out2['loss'].item()}"
+
+out2["loss"].backward()
+g2 = m2.last_logits.grad
+assert g2 is not None and torch.isfinite(g2).all() and g2.abs().sum().item() > 0, "bad gradient (kl run)"
+print(f"OK2 kl={kl_val.item():.4f}  loss={out2['loss'].item():.4f}  "
+      f"|grad| sum={g2.abs().sum().item():.4f}  finite={bool(torch.isfinite(g2).all())}")
