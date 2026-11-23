@@ -6,12 +6,13 @@ from trl import GRPOConfig, GRPOTrainer as TRLTrainer
 from grpo import GRPOTrainer as MyTrainer
 
 SEED, MODEL = 123, "Qwen/Qwen2.5-0.5B"
+SEED, MODEL = 123, "facebook/opt-125m"
 tok = AutoTokenizer.from_pretrained(MODEL); tok.pad_token = tok.eos_token
-data = Dataset.from_list([{"prompt": f"Say the word number {i}"} for i in range(4)])
+data = Dataset.from_list([{"prompt": p} for p in ["Hi", "Say hello to me please", "Write a poem about the ocean and the stars", "x"]])
 
 REWARDS = []
 def reward(prompts, completions, **kw):
-    s = [1.0 if len(c) > 3 else 0.0 for c in completions]
+    s = [float(len(c)) for c in completions]
     REWARDS.extend(s); return s
 
 def mkcfg():
@@ -37,10 +38,11 @@ def run(cls):
         inp = a[0] if a else k.get("input_ids"); outp = orig(*a, **k)
         GEN["plen"] = inp.shape[1]; GEN["out"] = outp; return outp
     m.generate = hook
-    def fp(): return sum(p.detach().abs().sum().item() for p in m.parameters())
-    before = fp()
+    init = [p.detach().cpu().clone() for p in m.parameters()]
     res = t.train()
-    changed = bool(abs(fp() - before) > 1e-8)
+    max_diff = torch.stack([(p.detach().cpu() - q).abs().max() for p, q in zip(m.parameters(), init)]).max().item()
+    changed = bool(max_diff > 0 or max_diff != max_diff)  # NaN counts as changed
+    print(f"{cls.__module__}.{cls.__name__}: max_diff={max_diff:.6e} changed={changed}")
     comps = GEN["out"][:, GEN["plen"]:].cpu() if "out" in GEN else None
     return dict(comps=comps, rewards=list(REWARDS), loss=float(res.training_loss), changed=changed)
 

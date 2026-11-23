@@ -160,9 +160,14 @@ class GRPOTrainer(Trainer):
         return {"prompts": [ex["prompt"] for ex in examples]}
 
     def _prompts_per_batch(self):
-        # [Fix A] TRL semantics: per_device_train_batch_size counts PROMPTS.
-        # G generations per prompt are produced internally during the forward.
-        return max(int(self.args.per_device_train_batch_size), 1)
+        # TRL 1.18.x semantics: per_device_train_batch_size counts TOTAL GENERATIONS
+        # (completions) per batch, not prompts.  num_generations completions are
+        # produced per prompt, so the effective number of prompts per batch is
+        # per_device_train_batch_size // num_generations.
+        # Example: per_device_train_batch_size=4, num_generations=2 → 2 prompts × 2 gens = 4 completions.
+        per_device = int(self.args.per_device_train_batch_size)
+        num_gen = max(int(getattr(self.args, "num_generations", 1)), 1)
+        return max(per_device // num_gen, 1)
 
     def get_train_dataloader(self):
         if self.train_dataset is None:
@@ -305,28 +310,30 @@ class GRPOTrainer(Trainer):
 
         # [Fix F] Left-pad prompts to the batch's max prompt length so
         # they can form a rectangular tensor for a single generate call.
+        # Note: enc["input_ids"][0] / enc["attention_mask"][0] are 1D
+        # tensors [pl], so the pad pieces must also be 1D and the
+        # concatenation along dim=0.
         L_pad = max(prompt_lens)
         padded_ids, padded_am = [], []
         for enc, pl in zip(encs, prompt_lens):
             ids = enc["input_ids"][0]
+            am = enc["attention_mask"][0]
             pad_len = L_pad - pl
             if pad_len > 0:
                 ids = torch.cat(
                     [
-                        torch.full((1, pad_len), self._pad_token_id, dtype=torch.long),
+                        torch.full((pad_len,), self._pad_token_id, dtype=ids.dtype),
                         ids,
                     ],
-                    dim=1,
+                    dim=0,
                 )
                 am = torch.cat(
                     [
-                        torch.zeros((1, pad_len), dtype=torch.long),
-                        enc["attention_mask"][0],
+                        torch.zeros(pad_len, dtype=am.dtype),
+                        am,
                     ],
-                    dim=1,
+                    dim=0,
                 )
-            else:
-                am = enc["attention_mask"][0]
             padded_ids.append(ids)
             padded_am.append(am)
 
