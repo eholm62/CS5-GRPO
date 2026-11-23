@@ -14,21 +14,21 @@
 
 ### Dependencies
   - For `train_grpo.py` (installation outlined below)
-      - PyTorch
-      - NumPy
-      - Transformers
-      - Datasets
-      - Accelerate
-    - Install with `.venv/bin/pip install numpy transformers datasets accelerate`
+    - PyTorch
+    - NumPy
+    - Transformers
+    - Datasets
+    - Accelerate
+    - Install deps. with `.venv/bin/pip install numpy transformers datasets accelerate`
       - PyTorch installation outlined below
   - For `show_reward_plot.py`
-      - Pandas
-      - Matplotlib
-        - You may also need to install a GUI backend, PyQt6 for example, if you run into issues
-    - Install with `.venv/bin/pip install pandas matplotlib`
+    - Pandas
+    - Matplotlib
+      - You may also need to install a GUI backend, PyQt6 for example, if you run into issues
+    - Install deps. with `.venv/bin/pip install pandas matplotlib`
   - For `test_grpo.py` and `test_grpo3.py`
-      - All deps. for `train_grpo.py`
-      - TRL
+    - All deps. for `train_grpo.py`
+    - TRL
     - Install TRL with `.venv/bin/pip install trl`
   - For `test_grpo2.py`
     - All deps. for `train_grpo.py` - Datasets
@@ -36,7 +36,7 @@
 #### PyTorch Installation
 Install one of the following versions of torch:
 
-With CUDA (For nVIDIA GPUs):
+With CUDA (For Nvidia GPUs):
 `.venv/bin/pip install torch`
 
 With ROCm (For AMD GPUs):
