@@ -3,3 +3,4 @@ __pycache__
 reward_log.jsonl
 reward_curve.png
 grpo_checkpoints
+training_results/weights
