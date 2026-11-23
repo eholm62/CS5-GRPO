@@ -20,6 +20,22 @@ from torch.utils.data import DataLoader
 from transformers import Trainer, GenerationConfig
 from transformers.utils import is_peft_available
 
+from dataclasses import dataclass
+
+from transformers import TrainingArguments
+
+
+@dataclass
+class GRPOConfig(TrainingArguments):
+    num_generations: int = 8
+    max_prompt_length: int = 512
+    max_completion_length: int = 256
+    beta: float = 0.0
+    temperature: float = 1.0
+    top_p: float = 1.0
+    top_k: int = 0
+    epsilon: float = 0.2
+
 logger = logging.getLogger(__name__)
 
 
@@ -157,7 +173,11 @@ class GRPOTrainer(Trainer):
 
     @staticmethod
     def _prompt_collate(examples):
-        return {"prompts": [ex["prompt"] for ex in examples]}
+        batch = {"prompts": [ex["prompt"] for ex in examples]}
+        for key in examples[0]:
+            if key != "prompt":
+                batch[key] = [ex[key] for ex in examples]
+        return batch
 
     def _prompts_per_batch(self):
         # TRL 1.18.x semantics: per_device_train_batch_size counts TOTAL GENERATIONS
@@ -190,13 +210,8 @@ class GRPOTrainer(Trainer):
     # ------------------------------------------------------------------
 
     def compute_loss(self, model, inputs, return_outputs=False, num_items_in_batch=None):
-        """
-        num_items_in_batch is accepted for interface compatibility with
-        newer HF Trainer versions. Our loss is already normalised
-        per-token (mean over valid completion tokens), so no additional
-        scaling is needed.
-        """
-        result = self._grpo_forward(model, inputs["prompts"])
+        extra_kwargs = {k: v for k, v in inputs.items() if k != "prompts"}
+        result = self._grpo_forward(model, inputs["prompts"], **extra_kwargs)
         if return_outputs:
             return result["loss"], result
         return result["loss"]
@@ -447,13 +462,17 @@ class GRPOTrainer(Trainer):
     # Rewards and advantages
     # ------------------------------------------------------------------
 
-    def _compute_rewards(self, flat_prompts, cids_list):
-        """Use self.processing_class (the primary tokenizer) for decoding."""
+    def _compute_rewards(self, flat_prompts, cids_list, **kwargs):
+        """Use self.processing_class (the primary tokenizer) for decoding.
+
+        Any additional columns from the dataset (e.g. target_count) are
+        forwarded as keyword arguments to each reward function.
+        """
         proc = self.processing_class
         completions = [proc.decode(c, skip_special_tokens=True) for c in cids_list]
         cids = [c.tolist() for c in cids_list]
         all_scores = [
-            rf(prompts=flat_prompts, completions=completions, completion_ids=cids)
+            rf(prompts=flat_prompts, completions=completions, completion_ids=cids, **kwargs)
             for rf in self.reward_funcs
         ]
         if len(all_scores) == 1:
@@ -479,16 +498,16 @@ class GRPOTrainer(Trainer):
     # Core GRPO forward
     # ------------------------------------------------------------------
 
-    def _grpo_forward(self, model, prompts):
+    def _grpo_forward(self, model, prompts, **extra_kwargs):
         """
         Key design points:
         - Single forward pass for old AND current log-probs. For
-          single-step on-policy GRPO, old_policy == current_policy,
-          so old_logps = cur_logps.detach() and ratio = 1 exactly.
-          This avoids any dropout/ordering mismatch between two
-          separate forward passes and saves one pass.
+        single-step on-policy GRPO, old_policy == current_policy,
+        so old_logps = cur_logps.detach() and ratio = 1 exactly.
+        This avoids any dropout/ordering mismatch between two
+        separate forward passes and saves one pass.
         - [Fix E] k3 KL estimator: exp(ref - cur) - (ref - cur) - 1,
-          matching TRL's GRPOTrainer (GRPO paper, Eq. 6).
+        matching TRL's GRPOTrainer (GRPO paper, Eq. 6).
         """
         args = self.args
         G = int(getattr(args, "num_generations", 1))
@@ -500,6 +519,12 @@ class GRPOTrainer(Trainer):
         input_ids = input_ids.to(device)
         attn = attn.to(device)
         cmask = cmask.to(device)
+
+        # Expand extra columns to match flat prompt ordering [p0 x G, p1 x G, ...]
+        flat_extra = {
+            key: [v for v in vals for _ in range(G)]
+            for key, vals in extra_kwargs.items()
+        }
 
         # Mask for completion-token log-probs (shifted by 1 for alignment):
         # cur_logps[t] = log P(input_ids[t+1] | input_ids[:t+1])
@@ -544,7 +569,7 @@ class GRPOTrainer(Trainer):
             kl_tok = torch.zeros_like(cur_logps)
 
         # --- Rewards and advantages ---
-        rewards = self._compute_rewards(flat_prompts, cids)
+        rewards = self._compute_rewards(flat_prompts, cids, **flat_extra)
         adv = self._group_advantages(rewards).to(device)
         adv_tok = adv.unsqueeze(1)  # [B, 1] broadcast over tokens
 
