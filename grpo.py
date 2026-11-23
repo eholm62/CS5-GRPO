@@ -187,11 +187,13 @@ class GRPOTrainer(Trainer):
         G = int(self.args.num_generations)
         temperature = float(getattr(self.args, "temperature", 1.0) or 1.0)
         do_sample = temperature > 0.0
+        # --- Fix 1: ensure eos_token_id is valid ---
+        eos_id = tok.eos_token_id if tok.eos_token_id is not None else self._pad_token_id
         gen_kwargs = dict(
             max_new_tokens=self._max_completion_length(),
             do_sample=do_sample,
             pad_token_id=self._pad_token_id,
-            eos_token_id=tok.eos_token_id,
+            eos_token_id=eos_id,
         )
         if do_sample:
             gen_kwargs["temperature"] = temperature
@@ -199,7 +201,7 @@ class GRPOTrainer(Trainer):
             top_k = getattr(self.args, "top_k", 0)
             if top_k and int(top_k) > 0:
                 gen_kwargs["top_k"] = int(top_k)
-        
+
         was_training = model.training
         model.eval()
         try:
@@ -211,13 +213,29 @@ class GRPOTrainer(Trainer):
                 prompt_len = single_ids.shape[1]
                 ids = single_ids.repeat(G, 1).to(model.device)
                 am = single_am.repeat(G, 1).to(model.device)
-                out = model.generate(input_ids=ids, attention_mask=am, **gen_kwargs)
+                # --- Fix 2: fallback to greedy if sampling hits NaN/inf ---
+                try:
+                    out = model.generate(input_ids=ids, attention_mask=am, **gen_kwargs)
+                except RuntimeError:
+                    logger.warning(
+                        "Sampling during generation failed (likely NaN/inf logits); "
+                        "falling back to greedy decoding."
+                    )
+                    out = model.generate(
+                        input_ids=ids,
+                        attention_mask=am,
+                        max_new_tokens=self._max_completion_length(),
+                        do_sample=False,
+                        pad_token_id=self._pad_token_id,
+                        eos_token_id=eos_id,
+                    )
                 for i in range(G):
                     flat_prompts.append(p)
                     pids_list.append(single_ids[0].cpu())
                     cids_list.append(out[i, prompt_len:].cpu())
         finally:
-            if was_training: model.train()
+            if was_training:
+                model.train()
         return flat_prompts, pids_list, cids_list
 
     def _build_training_batch(self, pids_list, cids_list):
