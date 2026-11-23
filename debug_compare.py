@@ -1,12 +1,13 @@
 # debug_compare.py
-import random, torch
+import inspect, random, torch
+from datasets import Dataset
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from trl import GRPOConfig, GRPOTrainer as TRLTrainer
 from grpo import GRPOTrainer as MyTrainer
 
 SEED, MODEL = 123, "facebook/opt-125m"
 tok = AutoTokenizer.from_pretrained(MODEL); tok.pad_token = tok.eos_token
-data = [{"prompt": f"Say the word number {i}"} for i in range(4)]
+data = Dataset.from_list([{"prompt": f"Say the word number {i}"} for i in range(4)])
 
 REWARDS = []
 def reward(prompts, completions, **kw):
@@ -14,10 +15,13 @@ def reward(prompts, completions, **kw):
     REWARDS.extend(s); return s
 
 def mkcfg():
-    return GRPOConfig(output_dir="/tmp/x", num_generations=2, max_prompt_length=32,
-                      max_completion_length=16, per_device_train_batch_size=4,
-                      learning_rate=1e-3, beta=0.0, report_to=[], max_steps=1,
-                      seed=SEED, data_seed=SEED)
+    cands = dict(output_dir="/tmp/x", num_generations=2, per_device_train_batch_size=4,
+                 learning_rate=1e-3, beta=0.0, report_to=[], max_steps=1,
+                 seed=SEED, data_seed=SEED,
+                 max_length=48, max_prompt_length=32, max_completion_length=16)
+    ok = set(inspect.signature(GRPOConfig).parameters)
+    kwargs = {k: v for k, v in cands.items() if k in ok}
+    return GRPOConfig(**kwargs)
 
 def build(m, cls):
     return cls(model=m, reward_funcs=[reward], args=mkcfg(),
@@ -33,12 +37,12 @@ def run(cls):
         inp = a[0] if a else k.get("input_ids"); outp = orig(*a, **k)
         GEN["plen"] = inp.shape[1]; GEN["out"] = outp; return outp
     m.generate = hook
-    def fp(): return torch.stack([p.detach().flatten() for p in m.parameters()]).abs().sum()
+    def fp(): return sum(p.detach().abs().sum().item() for p in m.parameters())
     before = fp()
     res = t.train()
-    changed = bool((fp() - before).abs() > 1e-8)
+    changed = bool(abs(fp() - before) > 1e-8)
     comps = GEN["out"][:, GEN["plen"]:].cpu() if "out" in GEN else None
-    return dict(comps=comps, rewards=list(REWARDS), loss=float(res.train_loss), changed=changed)
+    return dict(comps=comps, rewards=list(REWARDS), loss=float(res.training_loss), changed=changed)
 
 A = run(TRLTrainer); B = run(MyTrainer)
 def show(n, x, y): print(f"{n:14} | TRL : {x}\n{'':14} | MINE: {y}\n")

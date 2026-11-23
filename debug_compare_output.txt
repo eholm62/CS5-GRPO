@@ -1,0 +1,49 @@
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████| 197/197 [00:00<00:00, 72569.64it/s]
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+/opt/amdgpu/share/libdrm/amdgpu.ids: No such file or directory
+  0%|                                                                                                               | 0/1 [00:00<?, ?it/s]/home/ellioth/hide/git-repos/CS5-GRPO/.venv/lib/python3.14/site-packages/transformers/integrations/sdpa_attention.py:182: UserWarning: Flash Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:287.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+/home/ellioth/hide/git-repos/CS5-GRPO/.venv/lib/python3.14/site-packages/transformers/integrations/sdpa_attention.py:182: UserWarning: Mem Efficient attention on Current AMD GPU is still experimental. Enable it with TORCH_ROCM_AOTRITON_ENABLE_EXPERIMENTAL=1. (Triggered internally at /pytorch/aten/src/ATen/native/transformers/hip/sdp_utils.cpp:338.)
+  attn_output = torch.nn.functional.scaled_dot_product_attention(
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.92it/s]
+{'train_runtime': '1.288', 'train_samples_per_second': '3.104', 'train_steps_per_second': '0.776', 'train_loss': '0', 'num_tokens': '88', 'completions/mean_length': '16', 'completions/min_length': '16', 'completions/max_length': '16', 'completions/clipped_ratio': '1', 'completions/mean_terminated_length': '0', 'completions/min_terminated_length': '0', 'completions/max_terminated_length': '0', 'rewards/reward/mean': '1', 'rewards/reward/std': '0', 'reward': '1', 'reward_std': '0', 'frac_reward_zero_std': '1', 'entropy': '4.278', 'clip_ratio/low_mean': '0', 'clip_ratio/high_mean': '0', 'clip_ratio/region_mean': '0', 'clip_ratio/low_min': '0', 'clip_ratio/high_max': '0', 'step_time': '0.7949', 'epoch': '0.5'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:01<00:00,  1.29s/it]
+Loading weights: 100%|███████████████████████████████████████████████████████████████████████████████| 197/197 [00:00<00:00, 54424.84it/s]
+[transformers] The tokenizer has new PAD/BOS/EOS tokens that differ from the model config and generation config. The model config and generation config were aligned accordingly, being updated with the tokenizer's values. Updated tokens: {'pad_token_id': 2}.
+Writing model shards: 100%|█████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  7.75it/s]
+{'train_runtime': '0.6418', 'train_samples_per_second': '6.233', 'train_steps_per_second': '1.558', 'train_loss': '0', 'reward': '1', 'reward_std': '0', 'kl': '0', 'entropy': '3.795', 'clip_ratio': '0', 'completion_length': '15.25', 'epoch': '1'}
+100%|███████████████████████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  1.56it/s]
+completions    | TRL : tensor([[  150,     5,  3778,    16, 21003,   269,   269,  1769,   328, 50118,
+          2847, 30752,     5,  3778,    24,   888],
+        [    8,   172,   127,   301,    74,    28,   357,     4,  1308,   284,
+          1411, 10521,    59,   208,  1244,     4],
+        [   11,  1055,     8,    47,    64,   422,   143,   885,    73,   139,
+         42885,     4, 50118, 44853,   373,    47],
+        [   77,    47,   386,     7,  3992,   350,   203,     4, 50118,  7199,
+          1528,   114,    47,    33,   143,  1617]])
+               | MINE: tensor([[50118,   100,    21,   164,     7,   224,     6,    22,  4297,    24,
+          3948,    72,   125,    24,   222,     4],
+        [    4,  1773,    47,  4521,   457,     9,   110,   746, 12951,     8,
+            38,   437, 12483,    47,   218,    75],
+        [50118,  3084,     6,    38,  1705,    75,  1137,    47,     5,  8018,
+          2773,   396,  8201,    24,     4,     2],
+        [  328, 50118, 17781,   304,     5,   766,    47,  6565,   328,     2,
+             2,     2,     2,     2,     2,     2],
+        [   15,    14,  4486,  4927,  1082,     8,    38,    17,    27,   890,
+           492,    24,   103,   802,     4, 50118],
+        [ 2434,    15,  1169,   526,     9,     5,  2402,     4,    85,    40,
+           311,     5,  1736,     5, 39314,     6],
+        [  683,     4, 50118, 24567, 24963, 38522, 16836,   259,     6,   127,
+          1441,     4, 50118, 10285,   316,   688],
+        [   15,    14,  6654,     4,  1437,   280,    18,   127,    78,    12,
+          6294,  6654,     4, 50118,   100, 12155]])
+
+rewards        | TRL : [1.0, 1.0, 1.0, 1.0]
+               | MINE: [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+loss           | TRL : 0.0
+               | MINE: 0.0
+
+weights        | TRL : False
+               | MINE: False
