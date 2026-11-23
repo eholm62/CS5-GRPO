@@ -9,6 +9,7 @@ Usage:
 import argparse
 import csv
 import json
+import os
 import re
 from typing import Any, Dict, List
 
@@ -117,6 +118,49 @@ def reward_accuracy(
 
 
 # --------------------------------------------------------------------------- #
+# Final checkpoint saving
+# --------------------------------------------------------------------------- #
+def is_peft_model(model) -> bool:
+    return hasattr(model, "peft_config") and model.peft_config is not None
+
+
+def save_final_checkpoint(trainer, tokenizer, args, interrupted: bool = False) -> str:
+    """Save the final trained weights to <output_dir>/final/ on this machine."""
+    final_dir = os.path.join(args.output_dir, "final")
+    os.makedirs(final_dir, exist_ok=True)
+
+    model = trainer.model
+    tag = " (partial - training interrupted)" if interrupted else ""
+
+    if is_peft_model(model):
+        if args.save_merged:
+            print(f"Merging LoRA adapter into base model{tag}...")
+            merged = model.merge_and_unload()
+            merged.save_pretrained(final_dir, safe_serialization=True)
+            print(f"Saved MERGED full model (LoRA folded in) to {final_dir}")
+        else:
+            trainer.save_model(final_dir)
+            print(f"Saved LoRA adapter to {final_dir} "
+                  f"(use --save_merged for a full standalone model)")
+    else:
+        trainer.save_model(final_dir)
+        print(f"Saved full model weights to {final_dir}{tag}")
+
+    # Always save the tokenizer so the checkpoint is loadable on its own
+    tokenizer.save_pretrained(final_dir)
+
+    # Record the training arguments for reproducibility
+    with open(os.path.join(final_dir, "train_args.json"), "w", encoding="utf-8") as f:
+        json.dump(vars(args), f, indent=2)
+
+    print(f"Files in {final_dir}:")
+    for name in sorted(os.listdir(final_dir)):
+        size_mb = os.path.getsize(os.path.join(final_dir, name)) / (1024 * 1024)
+        print(f"  - {name:<40s} {size_mb:10.2f} MB")
+    return final_dir
+
+
+# --------------------------------------------------------------------------- #
 # Args
 # --------------------------------------------------------------------------- #
 def parse_args():
@@ -151,6 +195,14 @@ def parse_args():
     p.add_argument("--logging_steps", type=int, default=10,
                    help="Log reward every N optimizer steps.")
 
+    # Saving
+    p.add_argument("--save_total_limit", type=int, default=2,
+                   help="Number of per-epoch checkpoints to keep under output_dir "
+                        "(final model is always saved separately). -1 keeps all.")
+    p.add_argument("--save_merged", action="store_true",
+                   help="With --use_lora: merge the adapter into the base model "
+                        "and save a full standalone checkpoint (no PEFT needed at inference).")
+
     # Misc
     p.add_argument("--use_lora", action="store_true")
     return p.parse_args()
@@ -174,12 +226,15 @@ def main():
     if tokenizer.pad_token is None:
         tokenizer.pad_token = tokenizer.eos_token
 
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    print(f"Training on device: {device}")
+
     model = AutoModelForCausalLM.from_pretrained(
         args.model,
         dtype=torch.bfloat16,
         attn_implementation="sdpa",
         device_map=None,
-    )
+    ).to(device)
 
     peft_config = None
     if args.use_lora:
@@ -188,7 +243,7 @@ def main():
             r=16, lora_alpha=32, lora_dropout=0.05,
             target_modules=["q_proj", "k_proj", "v_proj", "o_proj",
                             "gate_proj", "up_proj", "down_proj"],
-            task_type="CAUSE_LM",
+            task_type="CAUSAL_LM",
         )
 
     # --- GRPO config ------------------------------------------------------------ #
@@ -210,6 +265,7 @@ def main():
         remove_unused_columns=False,
         dataloader_num_workers=0,
         save_strategy="epoch",
+        save_total_limit=args.save_total_limit,
         logging_steps=args.logging_steps,
     )
 
@@ -228,13 +284,17 @@ def main():
         callbacks=[reward_logger],
     )
 
-    trainer.train()
+    # --- Train (with best-effort save on interrupt) -------------------------------- #
+    interrupted = False
+    try:
+        trainer.train()
+    except KeyboardInterrupt:
+        interrupted = True
+        print("\nTraining interrupted — saving final weights before exiting...")
 
-    # --- Save ---------------------------------------------------------------------- #
-    trainer.save_model(args.output_dir)
-    tokenizer.save_pretrained(args.output_dir)
-    print(f"\nSaved model to {args.output_dir}")
-    print(f"Reward log:   {reward_log_path}")
+    # --- Save final weights to <output_dir>/final --------------------------------- #
+    save_final_checkpoint(trainer, tokenizer, args, interrupted=interrupted)
+    print(f"\nReward log:   {reward_log_path}")
 
 
 if __name__ == "__main__":
