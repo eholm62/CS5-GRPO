@@ -17,13 +17,15 @@
     - PyTorch
     - NumPy
     - Transformers
+    - Datasets
+    - Accelerate
   - `show_reward_plot.py`
     - pandas
     - matplotlib
       - You may also need to install a GUI backend, PyQt6 for example, if you run into issues
 
 To run `train_grpo.py`, install the dependencies within a via:
-`.venv/bin/pip install numpy transformers`
+`.venv/bin/pip install numpy transformers datasets accelerate`
 
 Then, to install torch with CUDA (For nVIDIA GPUs):
 `.venv/bin/pip install torch`
