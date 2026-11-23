@@ -78,7 +78,7 @@ class GRPOTrainer(Trainer):
         self.eval_collate_fn = eval_collate_fn
         self.peft_config = peft_config
         self.preprocess_logits_for_metrics = preprocess_logits_for_metrics
-        self._pending_metrics: dict = {}
+        self._pending_metrics: dict = {"sums": {}, "count": 0}
         self._last_reward_std = torch.tensor(0.0)
 
         if args is not None:
@@ -230,15 +230,17 @@ class GRPOTrainer(Trainer):
 
     def log(self, logs, start_time=None, **kwargs):
         """
-        Inject GRPO-specific metrics only; do NOT overwrite "loss" —
-        the Trainer's logged loss is authoritative.
+        Inject GRPO-specific metrics averaged over all steps since the
+        last log() call, then clear the accumulator. Do NOT overwrite
+        "loss" — the Trainer's logged loss is authoritative.
         """
-        if self._pending_metrics:
-            for k, v in self._pending_metrics.items():
+        pm = self._pending_metrics
+        if pm["count"] > 0:
+            for k, s in pm["sums"].items():
                 if k == "loss":
                     continue
-                logs.setdefault(k, v)
-            self._pending_metrics = {}
+                logs.setdefault(k, s / pm["count"])
+            self._pending_metrics = {"sums": {}, "count": 0}
         return super().log(logs, start_time, **kwargs)
 
     # ------------------------------------------------------------------
@@ -601,10 +603,11 @@ class GRPOTrainer(Trainer):
             "completion_length": comp_len.detach(),
         }
 
-        # Store for log() — Trainer's own "loss" takes precedence
-        self._pending_metrics = {
-            k: (float(v.item()) if hasattr(v, "item") else float(v))
-            for k, v in metrics.items()
-        }
+        # Accumulate for log() — averaged over all steps since the last log()
+        pm = self._pending_metrics
+        for k, v in metrics.items():
+            val = float(v.item()) if hasattr(v, "item") else float(v)
+            pm["sums"][k] = pm["sums"].get(k, 0.0) + val
+        pm["count"] += 1
 
         return {"loss": loss, "metrics": metrics}
