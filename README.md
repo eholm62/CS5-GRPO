@@ -8,8 +8,10 @@
   - Train a model on `letter_counting_dataset.csv` with `.venv/bin/python3 train_grpo.py --csv letter_counting_dataset.csv`
     - Depending on your hardware and whether you want to run on CPU or GPU or a combination, you may need to adjust 
     certain environment variables, such as CUDA_VISIBLE_DEVICES for example. You also need to install the correct version of torch for your hardware.
+    - Any reward logs, weights, or other training data are by default set to be ignored by git
   - After running train_grpo.py, you can display a plot of the logged reward over time with 
   `.venv/bin/python3 show_reward_plot.py reward_log.jsonl`
+  - To run any of the 3 tests for grpo.py use `.venv/bin/python3 [test file name]`
 
 
 ### Dependencies
