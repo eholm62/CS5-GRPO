@@ -5,7 +5,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 from trl import GRPOConfig, GRPOTrainer as TRLTrainer
 from grpo import GRPOTrainer as MyTrainer
 
-SEED, MODEL = 123, "facebook/opt-125m"
+SEED, MODEL = 123, "Qwen/Qwen2.5-0.5B"
 tok = AutoTokenizer.from_pretrained(MODEL); tok.pad_token = tok.eos_token
 data = Dataset.from_list([{"prompt": f"Say the word number {i}"} for i in range(4)])
 
