@@ -33,5 +33,8 @@ def main():
     plt.title(f"GRPO reward over training\n({args.log_file})")
     plt.tight_layout()
 
+    # Display the Plot
+    plt.show()
+
 if __name__ == "__main__":
     main()
