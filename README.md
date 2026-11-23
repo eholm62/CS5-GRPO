@@ -25,11 +25,11 @@
 To run `train_grpo.py`, install the dependencies within a via:
 `.venv/bin/pip install numpy transformers`
 
-Then to install torch with CUDA (For nVIDIA GPUs):
+Then, to install torch with CUDA (For nVIDIA GPUs):
 `.venv/bin/pip install torch`
 
-To install torch with ROCm (For AMD GPUs):
-`.venv/bin/pip install torch --index-url https://https://download.pytorch.org/whl/rocm`
+Or, to install torch with ROCm (For AMD GPUs):
+`.venv/bin/pip install torch --index-url https://https://download.pytorch.org/whl/rocm6.3`
 
-To install torch for CPU:
+Or, to install torch for CPU:
 `.venv/bin/pip install torch --index-url https://https://download.pytorch.org/whl/cpu`
